@@ -14,9 +14,11 @@
 <body>
   <div style="
     position:fixed; inset:0;
-    background:url('https://cdn.imgchest.com/files/4gdcxm9zrj4.jpg') center top repeat-y;
+    background:
+        linear-gradient(#171717e2, #171717e2),  /* dark overlay */
+        url('https://i.redd.it/1o2twr4j2sod1.jpeg') center top repeat-y;
     background-size: 100% auto;
-    filter:grayscale(50%) opacity(0.5);
+    filter:grayscale(50%) opacity(1);
     z-index:-1;
   "></div>
 </body>
@@ -28,313 +30,363 @@
         <input type="number" id="columnCountInput" min="1" max="10" value="5">
     </div>
     <div style="text-align:center; margin-bottom: 1em;">
-        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Justified</button>
+        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Masonry</button>
     </div>
     <p align="center"> Images on this page - 50, on this board - 53097</p>
-    <p align="right"> Created on - 2025-09-01 01:23:23</p>
-    <p align="right"> Created with pixBoards version: 0.2.25</p>
+    <p align="right"> Created on - 2025-09-01 03:06:11</p>
+    <p align="right"> Created with pixBoards version: 0.2.26</p>
 
     <hr>
 
-    <div class="masonry-container">
+    <div id="gallery" class="justified-container">
         
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/46acqgaarg7.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/46acqgaarg7.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/46acqgaarg7.jpg" alt="https://cdn.imgchest.com/files/46acqgaarg7.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-1.cdninstagram.com/v/t51.2885-15/520538435_18133147813434753_9048499739241866432_n.jpg?se=-1&stp=dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5oZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGxCtdSqdeEeJG8co3F8QupGN_LmuqBMfSHl-wj-xIWTEKgK4OcsaZAn0XuPSgcEAE&_nc_ohc=DLLbsVvae6IQ7kNvwGARsBW&_nc_gid=g7kyM3gajUSdiU-niYf0mA&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzY3NjU1Mjk2OTM5NTE5OTc0OA%3D%3D.3-ccb7-5&oh=00_AfUaNrAj_itNxO-53sW6k9jBbCmF4seRrXwr4DsfZT3gQw&oe=68A69AE1&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-1.cdninstagram.com/v/t51.2885-15/520538435_18133147813434753_9048499739241866432_n.jpg?se=-1&stp=dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5oZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGxCtdSqdeEeJG8co3F8QupGN_LmuqBMfSHl-wj-xIWTEKgK4OcsaZAn0XuPSgcEAE&_nc_ohc=DLLbsVvae6IQ7kNvwGARsBW&_nc_gid=g7kyM3gajUSdiU-niYf0mA&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzY3NjU1Mjk2OTM5NTE5OTc0OA%3D%3D.3-ccb7-5&oh=00_AfUaNrAj_itNxO-53sW6k9jBbCmF4seRrXwr4DsfZT3gQw&oe=68A69AE1&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-1.cdninstagram.com/v/t51.2885-15/520538435_18133147813434753_9048499739241866432_n.jpg?se=-1&stp=dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5oZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGxCtdSqdeEeJG8co3F8QupGN_LmuqBMfSHl-wj-xIWTEKgK4OcsaZAn0XuPSgcEAE&_nc_ohc=DLLbsVvae6IQ7kNvwGARsBW&_nc_gid=g7kyM3gajUSdiU-niYf0mA&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzY3NjU1Mjk2OTM5NTE5OTc0OA%3D%3D.3-ccb7-5&oh=00_AfUaNrAj_itNxO-53sW6k9jBbCmF4seRrXwr4DsfZT3gQw&oe=68A69AE1&_nc_sid=b41fef" alt="https://scontent-del2-1.cdninstagram.com/v/t51.2885-15/520538435_18133147813434753_9048499739241866432_n.jpg?se=-1&stp=dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5oZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGxCtdSqdeEeJG8co3F8QupGN_LmuqBMfSHl-wj-xIWTEKgK4OcsaZAn0XuPSgcEAE&_nc_ohc=DLLbsVvae6IQ7kNvwGARsBW&_nc_gid=g7kyM3gajUSdiU-niYf0mA&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzY3NjU1Mjk2OTM5NTE5OTc0OA%3D%3D.3-ccb7-5&oh=00_AfUaNrAj_itNxO-53sW6k9jBbCmF4seRrXwr4DsfZT3gQw&oe=68A69AE1&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4jdcv6wa2d4.webp" onclick="copyToClipboard('https://cdn.imgchest.com/files/4jdcv6wa2d4.webp'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4jdcv6wa2d4.webp" alt="https://cdn.imgchest.com/files/4jdcv6wa2d4.webp" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-3.cdninstagram.com/v/t51.29350-15/346661239_963429434678821_2957514273369676946_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExNTJ4MTQ0MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-3.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=r4WQJQe_Io4Q7kNvwE2yAMa&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUyMjYxNDYyMg%3D%3D.3-ccb7-5&oh=00_AfUarehlWnfD7mJ-RGr7H1-G5HyB56FG39RbK5Y8a8szhw&oe=68A65B6A&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-3.cdninstagram.com/v/t51.29350-15/346661239_963429434678821_2957514273369676946_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExNTJ4MTQ0MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-3.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=r4WQJQe_Io4Q7kNvwE2yAMa&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUyMjYxNDYyMg%3D%3D.3-ccb7-5&oh=00_AfUarehlWnfD7mJ-RGr7H1-G5HyB56FG39RbK5Y8a8szhw&oe=68A65B6A&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-3.cdninstagram.com/v/t51.29350-15/346661239_963429434678821_2957514273369676946_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExNTJ4MTQ0MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-3.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=r4WQJQe_Io4Q7kNvwE2yAMa&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUyMjYxNDYyMg%3D%3D.3-ccb7-5&oh=00_AfUarehlWnfD7mJ-RGr7H1-G5HyB56FG39RbK5Y8a8szhw&oe=68A65B6A&_nc_sid=b41fef" alt="https://scontent-del2-3.cdninstagram.com/v/t51.29350-15/346661239_963429434678821_2957514273369676946_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExNTJ4MTQ0MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-3.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=r4WQJQe_Io4Q7kNvwE2yAMa&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUyMjYxNDYyMg%3D%3D.3-ccb7-5&oh=00_AfUarehlWnfD7mJ-RGr7H1-G5HyB56FG39RbK5Y8a8szhw&oe=68A65B6A&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/46acqgaaqb7.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/46acqgaaqb7.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/46acqgaaqb7.jpg" alt="https://cdn.imgchest.com/files/46acqgaaqb7.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-1.cdninstagram.com/v/t51.2885-15/519884891_18133147852434753_338174636635354767_n.jpg?se=-1&stp=dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5oZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGxCtdSqdeEeJG8co3F8QupGN_LmuqBMfSHl-wj-xIWTEKgK4OcsaZAn0XuPSgcEAE&_nc_ohc=RKigPlRB2bEQ7kNvwFqhzgo&_nc_gid=g7kyM3gajUSdiU-niYf0mA&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzY3NjU1Mjk2OTM5NTMwMjk4MA%3D%3D.3-ccb7-5&oh=00_AfWfz52FHMt6bb_DgyuekIB4u9As-X4tOCkCeaaBSithnA&oe=68A6907F&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-1.cdninstagram.com/v/t51.2885-15/519884891_18133147852434753_338174636635354767_n.jpg?se=-1&stp=dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5oZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGxCtdSqdeEeJG8co3F8QupGN_LmuqBMfSHl-wj-xIWTEKgK4OcsaZAn0XuPSgcEAE&_nc_ohc=RKigPlRB2bEQ7kNvwFqhzgo&_nc_gid=g7kyM3gajUSdiU-niYf0mA&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzY3NjU1Mjk2OTM5NTMwMjk4MA%3D%3D.3-ccb7-5&oh=00_AfWfz52FHMt6bb_DgyuekIB4u9As-X4tOCkCeaaBSithnA&oe=68A6907F&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-1.cdninstagram.com/v/t51.2885-15/519884891_18133147852434753_338174636635354767_n.jpg?se=-1&stp=dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5oZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGxCtdSqdeEeJG8co3F8QupGN_LmuqBMfSHl-wj-xIWTEKgK4OcsaZAn0XuPSgcEAE&_nc_ohc=RKigPlRB2bEQ7kNvwFqhzgo&_nc_gid=g7kyM3gajUSdiU-niYf0mA&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzY3NjU1Mjk2OTM5NTMwMjk4MA%3D%3D.3-ccb7-5&oh=00_AfWfz52FHMt6bb_DgyuekIB4u9As-X4tOCkCeaaBSithnA&oe=68A6907F&_nc_sid=b41fef" alt="https://scontent-del2-1.cdninstagram.com/v/t51.2885-15/519884891_18133147852434753_338174636635354767_n.jpg?se=-1&stp=dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5oZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGxCtdSqdeEeJG8co3F8QupGN_LmuqBMfSHl-wj-xIWTEKgK4OcsaZAn0XuPSgcEAE&_nc_ohc=RKigPlRB2bEQ7kNvwFqhzgo&_nc_gid=g7kyM3gajUSdiU-niYf0mA&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzY3NjU1Mjk2OTM5NTMwMjk4MA%3D%3D.3-ccb7-5&oh=00_AfWfz52FHMt6bb_DgyuekIB4u9As-X4tOCkCeaaBSithnA&oe=68A6907F&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/d6s3ip.JPG" onclick="copyToClipboard('https://files.catbox.moe/d6s3ip.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/d6s3ip.JPG" alt="https://files.catbox.moe/d6s3ip.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/d6s3ip.JPG" alt="https://files.catbox.moe/d6s3ip.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://i.redd.it/7n4ibvbkec1f1.gif" onclick="copyToClipboard('https://i.redd.it/7n4ibvbkec1f1.gif'); event.preventDefault();">
-  <img src="https://i.redd.it/7n4ibvbkec1f1.gif" alt="https://i.redd.it/7n4ibvbkec1f1.gif" loading="lazy">
+<div class="justified-item">
+ <a href="https://i.redd.it/nb7zpqk3r4ad1.jpeg" onclick="copyToClipboard('https://i.redd.it/nb7zpqk3r4ad1.jpeg'); event.preventDefault();">
+  <img src="https://i.redd.it/nb7zpqk3r4ad1.jpeg" alt="https://i.redd.it/nb7zpqk3r4ad1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxmvgww4.webp" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxmvgww4.webp'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxmvgww4.webp" alt="https://cdn.imgchest.com/files/4gdcxmvgww4.webp" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del1-1.cdninstagram.com/v/t51.29350-15/346522136_6170501389701634_2120584197972350299_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjU4OXg1ODkuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=J5BZ_edseuQQ7kNvwEVuTcY&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMjM4ODQ3OTg5OTEzODI1OA%3D%3D.3-ccb7-5&oh=00_AfU_zg_YhEm7tutPMCt4HxDmVr8eDzPCGNKyV9gV-QjarA&oe=68A6729B&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del1-1.cdninstagram.com/v/t51.29350-15/346522136_6170501389701634_2120584197972350299_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjU4OXg1ODkuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=J5BZ_edseuQQ7kNvwEVuTcY&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMjM4ODQ3OTg5OTEzODI1OA%3D%3D.3-ccb7-5&oh=00_AfU_zg_YhEm7tutPMCt4HxDmVr8eDzPCGNKyV9gV-QjarA&oe=68A6729B&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del1-1.cdninstagram.com/v/t51.29350-15/346522136_6170501389701634_2120584197972350299_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjU4OXg1ODkuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=J5BZ_edseuQQ7kNvwEVuTcY&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMjM4ODQ3OTg5OTEzODI1OA%3D%3D.3-ccb7-5&oh=00_AfU_zg_YhEm7tutPMCt4HxDmVr8eDzPCGNKyV9gV-QjarA&oe=68A6729B&_nc_sid=b41fef" alt="https://scontent-del1-1.cdninstagram.com/v/t51.29350-15/346522136_6170501389701634_2120584197972350299_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjU4OXg1ODkuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=J5BZ_edseuQQ7kNvwEVuTcY&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMjM4ODQ3OTg5OTEzODI1OA%3D%3D.3-ccb7-5&oh=00_AfU_zg_YhEm7tutPMCt4HxDmVr8eDzPCGNKyV9gV-QjarA&oe=68A6729B&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxmvgob4.webp" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxmvgob4.webp'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxmvgob4.webp" alt="https://cdn.imgchest.com/files/4gdcxmvgob4.webp" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-3.cdninstagram.com/v/t51.29350-15/346501895_644716167563221_1807833533125178066_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjkwNXg5MDUuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del2-3.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=d-GLZCaU_IYQ7kNvwG4ZttN&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMjM4ODQ3OTg1NzIyMDQ4NQ%3D%3D.3-ccb7-5&oh=00_AfVi_0tvPJvhwqCdkpvN2szGczcjJVeg6aoDEPT1c3Oy-g&oe=68A67D6E&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-3.cdninstagram.com/v/t51.29350-15/346501895_644716167563221_1807833533125178066_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjkwNXg5MDUuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del2-3.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=d-GLZCaU_IYQ7kNvwG4ZttN&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMjM4ODQ3OTg1NzIyMDQ4NQ%3D%3D.3-ccb7-5&oh=00_AfVi_0tvPJvhwqCdkpvN2szGczcjJVeg6aoDEPT1c3Oy-g&oe=68A67D6E&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-3.cdninstagram.com/v/t51.29350-15/346501895_644716167563221_1807833533125178066_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjkwNXg5MDUuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del2-3.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=d-GLZCaU_IYQ7kNvwG4ZttN&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMjM4ODQ3OTg1NzIyMDQ4NQ%3D%3D.3-ccb7-5&oh=00_AfVi_0tvPJvhwqCdkpvN2szGczcjJVeg6aoDEPT1c3Oy-g&oe=68A67D6E&_nc_sid=b41fef" alt="https://scontent-del2-3.cdninstagram.com/v/t51.29350-15/346501895_644716167563221_1807833533125178066_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjkwNXg5MDUuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del2-3.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=d-GLZCaU_IYQ7kNvwG4ZttN&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMjM4ODQ3OTg1NzIyMDQ4NQ%3D%3D.3-ccb7-5&oh=00_AfVi_0tvPJvhwqCdkpvN2szGczcjJVeg6aoDEPT1c3Oy-g&oe=68A67D6E&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/d3cxkt.JPG" onclick="copyToClipboard('https://files.catbox.moe/d3cxkt.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/d3cxkt.JPG" alt="https://files.catbox.moe/d3cxkt.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/d3cxkt.JPG" alt="https://files.catbox.moe/d3cxkt.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="ytdl:https://v.redd.it/6mu2hmo7euhb1" onclick="copyToClipboard('ytdl:https://v.redd.it/6mu2hmo7euhb1'); event.preventDefault();">
-  <img src="ytdl:https://v.redd.it/6mu2hmo7euhb1" alt="ytdl:https://v.redd.it/6mu2hmo7euhb1" loading="lazy">
+<div class="justified-item">
+ <a href="https://i.redd.it/n6k6vurtbzde1.jpeg" onclick="copyToClipboard('https://i.redd.it/n6k6vurtbzde1.jpeg'); event.preventDefault();">
+  <img src="https://i.redd.it/n6k6vurtbzde1.jpeg" alt="https://i.redd.it/n6k6vurtbzde1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxmvglr4.webp" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxmvglr4.webp'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxmvglr4.webp" alt="https://cdn.imgchest.com/files/4gdcxmvglr4.webp" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del1-1.cdninstagram.com/v/t51.29350-15/346468915_161069393351062_7063814378778073592_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=k3T6Ldnp9tgQ7kNvwEc8S__&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDI5MjcxMQ%3D%3D.3-ccb7-5&oh=00_AfXbSa4NOu0T-8uL9gCWn9hVJbAG5wk5Z1Tea2gzw5iDlQ&oe=68A66630&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del1-1.cdninstagram.com/v/t51.29350-15/346468915_161069393351062_7063814378778073592_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=k3T6Ldnp9tgQ7kNvwEc8S__&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDI5MjcxMQ%3D%3D.3-ccb7-5&oh=00_AfXbSa4NOu0T-8uL9gCWn9hVJbAG5wk5Z1Tea2gzw5iDlQ&oe=68A66630&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del1-1.cdninstagram.com/v/t51.29350-15/346468915_161069393351062_7063814378778073592_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=k3T6Ldnp9tgQ7kNvwEc8S__&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDI5MjcxMQ%3D%3D.3-ccb7-5&oh=00_AfXbSa4NOu0T-8uL9gCWn9hVJbAG5wk5Z1Tea2gzw5iDlQ&oe=68A66630&_nc_sid=b41fef" alt="https://scontent-del1-1.cdninstagram.com/v/t51.29350-15/346468915_161069393351062_7063814378778073592_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=k3T6Ldnp9tgQ7kNvwEc8S__&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDI5MjcxMQ%3D%3D.3-ccb7-5&oh=00_AfXbSa4NOu0T-8uL9gCWn9hVJbAG5wk5Z1Tea2gzw5iDlQ&oe=68A66630&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxmvgjb4.webp" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxmvgjb4.webp'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxmvgjb4.webp" alt="https://cdn.imgchest.com/files/4gdcxmvgjb4.webp" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/346452213_1643939712684534_4066872638384577326_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=lj7Ckrxks_8Q7kNvwF0vGmK&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDE5MzEzMw%3D%3D.3-ccb7-5&oh=00_AfUWlv3KWzRo8ydx3IzccWE8Bc8dSDjvK_Q1QOpVnrYPbg&oe=68A688F2&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/346452213_1643939712684534_4066872638384577326_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=lj7Ckrxks_8Q7kNvwF0vGmK&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDE5MzEzMw%3D%3D.3-ccb7-5&oh=00_AfUWlv3KWzRo8ydx3IzccWE8Bc8dSDjvK_Q1QOpVnrYPbg&oe=68A688F2&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/346452213_1643939712684534_4066872638384577326_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=lj7Ckrxks_8Q7kNvwF0vGmK&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDE5MzEzMw%3D%3D.3-ccb7-5&oh=00_AfUWlv3KWzRo8ydx3IzccWE8Bc8dSDjvK_Q1QOpVnrYPbg&oe=68A688F2&_nc_sid=b41fef" alt="https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/346452213_1643939712684534_4066872638384577326_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=lj7Ckrxks_8Q7kNvwF0vGmK&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDE5MzEzMw%3D%3D.3-ccb7-5&oh=00_AfUWlv3KWzRo8ydx3IzccWE8Bc8dSDjvK_Q1QOpVnrYPbg&oe=68A688F2&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://i.redd.it/2bm6h9u0nffa1.jpg" onclick="copyToClipboard('https://i.redd.it/2bm6h9u0nffa1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/2bm6h9u0nffa1.jpg" alt="https://i.redd.it/2bm6h9u0nffa1.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://i.redd.it/sfotvh9fmfjd1.jpeg" onclick="copyToClipboard('https://i.redd.it/sfotvh9fmfjd1.jpeg'); event.preventDefault();">
+  <img src="https://i.redd.it/sfotvh9fmfjd1.jpeg" alt="https://i.redd.it/sfotvh9fmfjd1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/d18g95.JPG" onclick="copyToClipboard('https://files.catbox.moe/d18g95.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/d18g95.JPG" alt="https://files.catbox.moe/d18g95.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/d18g95.JPG" alt="https://files.catbox.moe/d18g95.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxmvger4.webp" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxmvger4.webp'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxmvger4.webp" alt="https://cdn.imgchest.com/files/4gdcxmvger4.webp" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346363468_208260648654439_5357350933725373068_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExNTJ4MTQ0MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=9y-v6bpKIfwQ7kNvwEvZsnt&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUwNTY5NjcxNw%3D%3D.3-ccb7-5&oh=00_AfXdj7imnEvU8NXGN2sJdqR9NSMzVdDJ3f6Zrvsvh4Berg&oe=68A68B4E&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346363468_208260648654439_5357350933725373068_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExNTJ4MTQ0MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=9y-v6bpKIfwQ7kNvwEvZsnt&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUwNTY5NjcxNw%3D%3D.3-ccb7-5&oh=00_AfXdj7imnEvU8NXGN2sJdqR9NSMzVdDJ3f6Zrvsvh4Berg&oe=68A68B4E&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346363468_208260648654439_5357350933725373068_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExNTJ4MTQ0MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=9y-v6bpKIfwQ7kNvwEvZsnt&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUwNTY5NjcxNw%3D%3D.3-ccb7-5&oh=00_AfXdj7imnEvU8NXGN2sJdqR9NSMzVdDJ3f6Zrvsvh4Berg&oe=68A68B4E&_nc_sid=b41fef" alt="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346363468_208260648654439_5357350933725373068_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExNTJ4MTQ0MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=9y-v6bpKIfwQ7kNvwEvZsnt&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUwNTY5NjcxNw%3D%3D.3-ccb7-5&oh=00_AfXdj7imnEvU8NXGN2sJdqR9NSMzVdDJ3f6Zrvsvh4Berg&oe=68A68B4E&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxmvgbd4.webp" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxmvgbd4.webp'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxmvgbd4.webp" alt="https://cdn.imgchest.com/files/4gdcxmvgbd4.webp" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346272927_536317065155697_5429255194232272572_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEwMDB4MTI1MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=BiQ77QQXcroQ7kNvwF4lzjG&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjU4MTM3NTU5Mw%3D%3D.3-ccb7-5&oh=00_AfVQgj02pu8GrLxOG9RPB62AC_TyRcoiZyY9FHpGN6ktBA&oe=68A67600&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346272927_536317065155697_5429255194232272572_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEwMDB4MTI1MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=BiQ77QQXcroQ7kNvwF4lzjG&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjU4MTM3NTU5Mw%3D%3D.3-ccb7-5&oh=00_AfVQgj02pu8GrLxOG9RPB62AC_TyRcoiZyY9FHpGN6ktBA&oe=68A67600&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346272927_536317065155697_5429255194232272572_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEwMDB4MTI1MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=BiQ77QQXcroQ7kNvwF4lzjG&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjU4MTM3NTU5Mw%3D%3D.3-ccb7-5&oh=00_AfVQgj02pu8GrLxOG9RPB62AC_TyRcoiZyY9FHpGN6ktBA&oe=68A67600&_nc_sid=b41fef" alt="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346272927_536317065155697_5429255194232272572_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEwMDB4MTI1MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=BiQ77QQXcroQ7kNvwF4lzjG&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjU4MTM3NTU5Mw%3D%3D.3-ccb7-5&oh=00_AfVQgj02pu8GrLxOG9RPB62AC_TyRcoiZyY9FHpGN6ktBA&oe=68A67600&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxmvg5r4.webp" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxmvg5r4.webp'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxmvg5r4.webp" alt="https://cdn.imgchest.com/files/4gdcxmvg5r4.webp" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346246244_1370793736983391_2898142416835186436_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjkwMHgxMTI1LnNkci5mMjkzNTAuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=XeVrH3WBPIwQ7kNvwEbE6Ut&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDI1MjY3Ng%3D%3D.3-ccb7-5&oh=00_AfUC9i7oZ0INplHFhgbBwTpGdDn41hxb72aVGdzTRzUVkQ&oe=68A66D2F&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346246244_1370793736983391_2898142416835186436_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjkwMHgxMTI1LnNkci5mMjkzNTAuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=XeVrH3WBPIwQ7kNvwEbE6Ut&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDI1MjY3Ng%3D%3D.3-ccb7-5&oh=00_AfUC9i7oZ0INplHFhgbBwTpGdDn41hxb72aVGdzTRzUVkQ&oe=68A66D2F&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346246244_1370793736983391_2898142416835186436_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjkwMHgxMTI1LnNkci5mMjkzNTAuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=XeVrH3WBPIwQ7kNvwEbE6Ut&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDI1MjY3Ng%3D%3D.3-ccb7-5&oh=00_AfUC9i7oZ0INplHFhgbBwTpGdDn41hxb72aVGdzTRzUVkQ&oe=68A66D2F&_nc_sid=b41fef" alt="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346246244_1370793736983391_2898142416835186436_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjkwMHgxMTI1LnNkci5mMjkzNTAuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=XeVrH3WBPIwQ7kNvwEbE6Ut&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDI1MjY3Ng%3D%3D.3-ccb7-5&oh=00_AfUC9i7oZ0INplHFhgbBwTpGdDn41hxb72aVGdzTRzUVkQ&oe=68A66D2F&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/cyk1vh.JPG" onclick="copyToClipboard('https://files.catbox.moe/cyk1vh.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/cyk1vh.JPG" alt="https://files.catbox.moe/cyk1vh.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/cyk1vh.JPG" alt="https://files.catbox.moe/cyk1vh.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/cxueas.JPG" onclick="copyToClipboard('https://files.catbox.moe/cxueas.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/cxueas.JPG" alt="https://files.catbox.moe/cxueas.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/cxueas.JPG" alt="https://files.catbox.moe/cxueas.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9zxx4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9zxx4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9zxx4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9zxx4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346132599_1283526432253003_6954595282421686269_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=fg19sgBYrvkQ7kNvwENiFwU&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjU3Mjc4NzA4OQ%3D%3D.3-ccb7-5&oh=00_AfUKTJ8hHL-KsxmC5UxYsBebGiYnRhwsJbSDL73xMo_bCA&oe=68A67335&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346132599_1283526432253003_6954595282421686269_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=fg19sgBYrvkQ7kNvwENiFwU&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjU3Mjc4NzA4OQ%3D%3D.3-ccb7-5&oh=00_AfUKTJ8hHL-KsxmC5UxYsBebGiYnRhwsJbSDL73xMo_bCA&oe=68A67335&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346132599_1283526432253003_6954595282421686269_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=fg19sgBYrvkQ7kNvwENiFwU&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjU3Mjc4NzA4OQ%3D%3D.3-ccb7-5&oh=00_AfUKTJ8hHL-KsxmC5UxYsBebGiYnRhwsJbSDL73xMo_bCA&oe=68A67335&_nc_sid=b41fef" alt="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346132599_1283526432253003_6954595282421686269_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=fg19sgBYrvkQ7kNvwENiFwU&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjU3Mjc4NzA4OQ%3D%3D.3-ccb7-5&oh=00_AfUKTJ8hHL-KsxmC5UxYsBebGiYnRhwsJbSDL73xMo_bCA&oe=68A67335&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9zwr4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9zwr4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9zwr4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9zwr4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346120011_1010887473279849_2362016470307989319_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEwMDB4MTI1MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=IzYoIQ8MEzsQ7kNvwE3WHbf&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDI2MjY1Ng%3D%3D.3-ccb7-5&oh=00_AfWbPkhsiEEn4SBQn1LuV6XkJjTTBn1qS6UClriItySPqQ&oe=68A65C39&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346120011_1010887473279849_2362016470307989319_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEwMDB4MTI1MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=IzYoIQ8MEzsQ7kNvwE3WHbf&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDI2MjY1Ng%3D%3D.3-ccb7-5&oh=00_AfWbPkhsiEEn4SBQn1LuV6XkJjTTBn1qS6UClriItySPqQ&oe=68A65C39&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346120011_1010887473279849_2362016470307989319_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEwMDB4MTI1MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=IzYoIQ8MEzsQ7kNvwE3WHbf&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDI2MjY1Ng%3D%3D.3-ccb7-5&oh=00_AfWbPkhsiEEn4SBQn1LuV6XkJjTTBn1qS6UClriItySPqQ&oe=68A65C39&_nc_sid=b41fef" alt="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/346120011_1010887473279849_2362016470307989319_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEwMDB4MTI1MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=IzYoIQ8MEzsQ7kNvwE3WHbf&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUxNDI2MjY1Ng%3D%3D.3-ccb7-5&oh=00_AfWbPkhsiEEn4SBQn1LuV6XkJjTTBn1qS6UClriItySPqQ&oe=68A65C39&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/cud8at.JPG" onclick="copyToClipboard('https://files.catbox.moe/cud8at.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/cud8at.JPG" alt="https://files.catbox.moe/cud8at.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/cud8at.JPG" alt="https://files.catbox.moe/cud8at.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://i.redd.it/2ni4zizihlp81.jpg" onclick="copyToClipboard('https://i.redd.it/2ni4zizihlp81.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/2ni4zizihlp81.jpg" alt="https://i.redd.it/2ni4zizihlp81.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://i.redd.it/1tpwk35pltgc1.png" onclick="copyToClipboard('https://i.redd.it/1tpwk35pltgc1.png'); event.preventDefault();">
+  <img src="https://i.redd.it/1tpwk35pltgc1.png" alt="https://i.redd.it/1tpwk35pltgc1.png" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9zrj4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9zrj4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9zrj4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9zrj4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/346093917_982363143205332_3817023474584451044_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEyODB4MTYwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=u22bskThGvAQ7kNvwH-nww7&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUyMjU4MTgyMQ%3D%3D.3-ccb7-5&oh=00_AfUfgpWH12pRjZhTy1LWX2Hr5_7e1TNX2Ep64yoGwhqgOw&oe=68A6836F&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/346093917_982363143205332_3817023474584451044_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEyODB4MTYwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=u22bskThGvAQ7kNvwH-nww7&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUyMjU4MTgyMQ%3D%3D.3-ccb7-5&oh=00_AfUfgpWH12pRjZhTy1LWX2Hr5_7e1TNX2Ep64yoGwhqgOw&oe=68A6836F&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/346093917_982363143205332_3817023474584451044_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEyODB4MTYwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=u22bskThGvAQ7kNvwH-nww7&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUyMjU4MTgyMQ%3D%3D.3-ccb7-5&oh=00_AfUfgpWH12pRjZhTy1LWX2Hr5_7e1TNX2Ep64yoGwhqgOw&oe=68A6836F&_nc_sid=b41fef" alt="https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/346093917_982363143205332_3817023474584451044_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEyODB4MTYwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGAszejtO5KFGsFQiGXwLUKCO-EJ7DvUu9n_LXNszAajnxMX6Mm7udd_Bi3XSDX1cQ&_nc_ohc=u22bskThGvAQ7kNvwH-nww7&_nc_gid=BbZjaBZnzcmiTLnQDa8j9w&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMTc0OTQyNjUyMjU4MTgyMQ%3D%3D.3-ccb7-5&oh=00_AfUfgpWH12pRjZhTy1LWX2Hr5_7e1TNX2Ep64yoGwhqgOw&oe=68A6836F&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9zqd4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9zqd4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9zqd4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9zqd4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/345913541_253312723776427_268074097102842421_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjExMDl4MTM4Ny5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=zUa14athd3AQ7kNvwGipb-O&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMDIwNTYxMTI3NTIxNzE2Nw%3D%3D.3-ccb7-5&oh=00_AfVhp-h8SP0caewWiR5VRjx7ZBInZGwIn37UfVUSG4ecSQ&oe=68A6607F&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/345913541_253312723776427_268074097102842421_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjExMDl4MTM4Ny5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=zUa14athd3AQ7kNvwGipb-O&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMDIwNTYxMTI3NTIxNzE2Nw%3D%3D.3-ccb7-5&oh=00_AfVhp-h8SP0caewWiR5VRjx7ZBInZGwIn37UfVUSG4ecSQ&oe=68A6607F&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/345913541_253312723776427_268074097102842421_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjExMDl4MTM4Ny5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=zUa14athd3AQ7kNvwGipb-O&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMDIwNTYxMTI3NTIxNzE2Nw%3D%3D.3-ccb7-5&oh=00_AfVhp-h8SP0caewWiR5VRjx7ZBInZGwIn37UfVUSG4ecSQ&oe=68A6607F&_nc_sid=b41fef" alt="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/345913541_253312723776427_268074097102842421_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjExMDl4MTM4Ny5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=zUa14athd3AQ7kNvwGipb-O&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzEwMDIwNTYxMTI3NTIxNzE2Nw%3D%3D.3-ccb7-5&oh=00_AfVhp-h8SP0caewWiR5VRjx7ZBInZGwIn37UfVUSG4ecSQ&oe=68A6607F&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9zpj4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9zpj4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9zpj4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9zpj4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/345593615_789827475988233_1051770850113953923_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjcwMng3MDIuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=Nmq-F3Dw79gQ7kNvwHPw7I-&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA5OTUzOTc3MDMyMDM2ODA0OQ%3D%3D.3-ccb7-5&oh=00_AfXE-cgo5d1C8NfMKidk-aN7zIOyFXRo2Y4WqBBQyWwpIQ&oe=68A689AD&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/345593615_789827475988233_1051770850113953923_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjcwMng3MDIuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=Nmq-F3Dw79gQ7kNvwHPw7I-&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA5OTUzOTc3MDMyMDM2ODA0OQ%3D%3D.3-ccb7-5&oh=00_AfXE-cgo5d1C8NfMKidk-aN7zIOyFXRo2Y4WqBBQyWwpIQ&oe=68A689AD&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/345593615_789827475988233_1051770850113953923_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjcwMng3MDIuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=Nmq-F3Dw79gQ7kNvwHPw7I-&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA5OTUzOTc3MDMyMDM2ODA0OQ%3D%3D.3-ccb7-5&oh=00_AfXE-cgo5d1C8NfMKidk-aN7zIOyFXRo2Y4WqBBQyWwpIQ&oe=68A689AD&_nc_sid=b41fef" alt="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/345593615_789827475988233_1051770850113953923_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjcwMng3MDIuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=Nmq-F3Dw79gQ7kNvwHPw7I-&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA5OTUzOTc3MDMyMDM2ODA0OQ%3D%3D.3-ccb7-5&oh=00_AfXE-cgo5d1C8NfMKidk-aN7zIOyFXRo2Y4WqBBQyWwpIQ&oe=68A689AD&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/cp0h05.JPG" onclick="copyToClipboard('https://files.catbox.moe/cp0h05.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/cp0h05.JPG" alt="https://files.catbox.moe/cp0h05.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/cp0h05.JPG" alt="https://files.catbox.moe/cp0h05.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9zob4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9zob4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9zob4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9zob4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-2.cdninstagram.com/v/t51.29350-15/345532782_892987021806473_3894543510843551639_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEwODB4MTA4MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=VpwoTlOKbMQQ7kNvwGF3SOQ&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA5OTUzOTc3MDMyMDM3ODMxNw%3D%3D.3-ccb7-5&oh=00_AfUVsoKwesEz5ZgBK8dM5vPzfMKwsEAMdbmWlntai0IO8Q&oe=68A68BE0&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-2.cdninstagram.com/v/t51.29350-15/345532782_892987021806473_3894543510843551639_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEwODB4MTA4MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=VpwoTlOKbMQQ7kNvwGF3SOQ&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA5OTUzOTc3MDMyMDM3ODMxNw%3D%3D.3-ccb7-5&oh=00_AfUVsoKwesEz5ZgBK8dM5vPzfMKwsEAMdbmWlntai0IO8Q&oe=68A68BE0&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-2.cdninstagram.com/v/t51.29350-15/345532782_892987021806473_3894543510843551639_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEwODB4MTA4MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=VpwoTlOKbMQQ7kNvwGF3SOQ&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA5OTUzOTc3MDMyMDM3ODMxNw%3D%3D.3-ccb7-5&oh=00_AfUVsoKwesEz5ZgBK8dM5vPzfMKwsEAMdbmWlntai0IO8Q&oe=68A68BE0&_nc_sid=b41fef" alt="https://scontent-del2-2.cdninstagram.com/v/t51.29350-15/345532782_892987021806473_3894543510843551639_n.heic?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjEwODB4MTA4MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=VpwoTlOKbMQQ7kNvwGF3SOQ&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA5OTUzOTc3MDMyMDM3ODMxNw%3D%3D.3-ccb7-5&oh=00_AfUVsoKwesEz5ZgBK8dM5vPzfMKwsEAMdbmWlntai0IO8Q&oe=68A68BE0&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9znj4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9znj4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9znj4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9znj4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/341339521_621302479477711_2965846265120917708_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=XVH2PXbK4v8Q7kNvwH1GcGp&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MjA2NjI2NTU0ODQ2MDU1Mg%3D%3D.3-ccb7-5&oh=00_AfX3gU8BbrzuoF2mhNIi8JheEG9eg1WGsh3Me5ZKLR4QxQ&oe=68A66F31&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/341339521_621302479477711_2965846265120917708_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=XVH2PXbK4v8Q7kNvwH1GcGp&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MjA2NjI2NTU0ODQ2MDU1Mg%3D%3D.3-ccb7-5&oh=00_AfX3gU8BbrzuoF2mhNIi8JheEG9eg1WGsh3Me5ZKLR4QxQ&oe=68A66F31&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/341339521_621302479477711_2965846265120917708_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=XVH2PXbK4v8Q7kNvwH1GcGp&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MjA2NjI2NTU0ODQ2MDU1Mg%3D%3D.3-ccb7-5&oh=00_AfX3gU8BbrzuoF2mhNIi8JheEG9eg1WGsh3Me5ZKLR4QxQ&oe=68A66F31&_nc_sid=b41fef" alt="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/341339521_621302479477711_2965846265120917708_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=XVH2PXbK4v8Q7kNvwH1GcGp&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MjA2NjI2NTU0ODQ2MDU1Mg%3D%3D.3-ccb7-5&oh=00_AfX3gU8BbrzuoF2mhNIi8JheEG9eg1WGsh3Me5ZKLR4QxQ&oe=68A66F31&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9zmb4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9zmb4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9zmb4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9zmb4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/341202638_1151691668833842_4197013243932465431_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=wNUShtMk3FEQ7kNvwGG1pDb&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MjA2NjI2NTU1Njg4Nzc2Mw%3D%3D.3-ccb7-5&oh=00_AfW7_abyyqORFLz-gfTtgWgoqLIcki9Ng4lkLRRkGjA3nw&oe=68A68C25&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/341202638_1151691668833842_4197013243932465431_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=wNUShtMk3FEQ7kNvwGG1pDb&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MjA2NjI2NTU1Njg4Nzc2Mw%3D%3D.3-ccb7-5&oh=00_AfW7_abyyqORFLz-gfTtgWgoqLIcki9Ng4lkLRRkGjA3nw&oe=68A68C25&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/341202638_1151691668833842_4197013243932465431_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=wNUShtMk3FEQ7kNvwGG1pDb&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MjA2NjI2NTU1Njg4Nzc2Mw%3D%3D.3-ccb7-5&oh=00_AfW7_abyyqORFLz-gfTtgWgoqLIcki9Ng4lkLRRkGjA3nw&oe=68A68C25&_nc_sid=b41fef" alt="https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/341202638_1151691668833842_4197013243932465431_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=wNUShtMk3FEQ7kNvwGG1pDb&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MjA2NjI2NTU1Njg4Nzc2Mw%3D%3D.3-ccb7-5&oh=00_AfW7_abyyqORFLz-gfTtgWgoqLIcki9Ng4lkLRRkGjA3nw&oe=68A68C25&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9zlr4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9zlr4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9zlr4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9zlr4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/341018351_203739992385825_6087180853381878237_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExMDh4MTM4Ny5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=TeyR1nDgR20Q7kNvwHqEGnx&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3OTk2NDQ5MDM5MjE4ODE2MQ%3D%3D.3-ccb7-5&oh=00_AfXgZMdhyhIKxPWGRsJPuJItHoVRvWklz47vP_91A5-uOQ&oe=68A6704B&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/341018351_203739992385825_6087180853381878237_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExMDh4MTM4Ny5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=TeyR1nDgR20Q7kNvwHqEGnx&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3OTk2NDQ5MDM5MjE4ODE2MQ%3D%3D.3-ccb7-5&oh=00_AfXgZMdhyhIKxPWGRsJPuJItHoVRvWklz47vP_91A5-uOQ&oe=68A6704B&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/341018351_203739992385825_6087180853381878237_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExMDh4MTM4Ny5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=TeyR1nDgR20Q7kNvwHqEGnx&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3OTk2NDQ5MDM5MjE4ODE2MQ%3D%3D.3-ccb7-5&oh=00_AfXgZMdhyhIKxPWGRsJPuJItHoVRvWklz47vP_91A5-uOQ&oe=68A6704B&_nc_sid=b41fef" alt="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/341018351_203739992385825_6087180853381878237_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExMDh4MTM4Ny5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=TeyR1nDgR20Q7kNvwHqEGnx&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3OTk2NDQ5MDM5MjE4ODE2MQ%3D%3D.3-ccb7-5&oh=00_AfXgZMdhyhIKxPWGRsJPuJItHoVRvWklz47vP_91A5-uOQ&oe=68A6704B&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9zgd4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9zgd4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9zgd4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9zgd4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-2.cdninstagram.com/v/t51.29350-15/340830127_969427474067837_6562096228913348560_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExMDh4MTM4Ny5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=NEUxDdsu4wMQ7kNvwHMDXVn&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3OTk2NDQ5MDM5MjI3MTcyNA%3D%3D.3-ccb7-5&oh=00_AfW_iBIZ6PzZLXy2Szgub-f34ndbzQtuAeEafX3Nuwlm_g&oe=68A6570F&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-2.cdninstagram.com/v/t51.29350-15/340830127_969427474067837_6562096228913348560_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExMDh4MTM4Ny5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=NEUxDdsu4wMQ7kNvwHMDXVn&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3OTk2NDQ5MDM5MjI3MTcyNA%3D%3D.3-ccb7-5&oh=00_AfW_iBIZ6PzZLXy2Szgub-f34ndbzQtuAeEafX3Nuwlm_g&oe=68A6570F&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-2.cdninstagram.com/v/t51.29350-15/340830127_969427474067837_6562096228913348560_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExMDh4MTM4Ny5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=NEUxDdsu4wMQ7kNvwHMDXVn&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3OTk2NDQ5MDM5MjI3MTcyNA%3D%3D.3-ccb7-5&oh=00_AfW_iBIZ6PzZLXy2Szgub-f34ndbzQtuAeEafX3Nuwlm_g&oe=68A6570F&_nc_sid=b41fef" alt="https://scontent-del2-2.cdninstagram.com/v/t51.29350-15/340830127_969427474067837_6562096228913348560_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjExMDh4MTM4Ny5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=NEUxDdsu4wMQ7kNvwHMDXVn&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3OTk2NDQ5MDM5MjI3MTcyNA%3D%3D.3-ccb7-5&oh=00_AfW_iBIZ6PzZLXy2Szgub-f34ndbzQtuAeEafX3Nuwlm_g&oe=68A6570F&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9zal4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9zal4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9zal4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9zal4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/331807144_670010688145074_2545591820487692192_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjEyODB4MTYwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=b_tkSXcF7vMQ7kNvwEMNL7O&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA0MjkyMTkzNDE0ODEzNjE1OA%3D%3D.3-ccb7-5&oh=00_AfVAhNeZmQvxC48HDbnF8wU-JA9rEQ4kqSYgWqWktkWjig&oe=68A668A8&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/331807144_670010688145074_2545591820487692192_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjEyODB4MTYwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=b_tkSXcF7vMQ7kNvwEMNL7O&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA0MjkyMTkzNDE0ODEzNjE1OA%3D%3D.3-ccb7-5&oh=00_AfVAhNeZmQvxC48HDbnF8wU-JA9rEQ4kqSYgWqWktkWjig&oe=68A668A8&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/331807144_670010688145074_2545591820487692192_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjEyODB4MTYwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=b_tkSXcF7vMQ7kNvwEMNL7O&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA0MjkyMTkzNDE0ODEzNjE1OA%3D%3D.3-ccb7-5&oh=00_AfVAhNeZmQvxC48HDbnF8wU-JA9rEQ4kqSYgWqWktkWjig&oe=68A668A8&_nc_sid=b41fef" alt="https://scontent-del1-2.cdninstagram.com/v/t51.29350-15/331807144_670010688145074_2545591820487692192_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjEyODB4MTYwMC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=b_tkSXcF7vMQ7kNvwEMNL7O&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA0MjkyMTkzNDE0ODEzNjE1OA%3D%3D.3-ccb7-5&oh=00_AfVAhNeZmQvxC48HDbnF8wU-JA9rEQ4kqSYgWqWktkWjig&oe=68A668A8&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/ch5apu.JPG" onclick="copyToClipboard('https://files.catbox.moe/ch5apu.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/ch5apu.JPG" alt="https://files.catbox.moe/ch5apu.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/ch5apu.JPG" alt="https://files.catbox.moe/ch5apu.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://i.redd.it/20r8ydy7lhte1.jpeg" onclick="copyToClipboard('https://i.redd.it/20r8ydy7lhte1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/20r8ydy7lhte1.jpeg" alt="https://i.redd.it/20r8ydy7lhte1.jpeg" loading="lazy">
+<div class="justified-item">
+ <a href="https://i.redd.it/ucdgjmjfxrjf1.jpg" onclick="copyToClipboard('https://i.redd.it/ucdgjmjfxrjf1.jpg'); event.preventDefault();">
+  <img src="https://i.redd.it/ucdgjmjfxrjf1.jpg" alt="https://i.redd.it/ucdgjmjfxrjf1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9z8r4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9z8r4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9z8r4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9z8r4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-3.cdninstagram.com/v/t51.29350-15/330906114_2456589721184089_5091806446140551265_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-3.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=E2mVNCgk8GMQ7kNvwG8X74P&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzAzOTM1ODg3NDM1MTMxOTM5Ng%3D%3D.3-ccb7-5&oh=00_AfVZl1N2UCZROc2y3J2Ap20zyf722c_066onYIVO2I-TDA&oe=68A65F14&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-3.cdninstagram.com/v/t51.29350-15/330906114_2456589721184089_5091806446140551265_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-3.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=E2mVNCgk8GMQ7kNvwG8X74P&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzAzOTM1ODg3NDM1MTMxOTM5Ng%3D%3D.3-ccb7-5&oh=00_AfVZl1N2UCZROc2y3J2Ap20zyf722c_066onYIVO2I-TDA&oe=68A65F14&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-3.cdninstagram.com/v/t51.29350-15/330906114_2456589721184089_5091806446140551265_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-3.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=E2mVNCgk8GMQ7kNvwG8X74P&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzAzOTM1ODg3NDM1MTMxOTM5Ng%3D%3D.3-ccb7-5&oh=00_AfVZl1N2UCZROc2y3J2Ap20zyf722c_066onYIVO2I-TDA&oe=68A65F14&_nc_sid=b41fef" alt="https://scontent-del2-3.cdninstagram.com/v/t51.29350-15/330906114_2456589721184089_5091806446140551265_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-3.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=E2mVNCgk8GMQ7kNvwG8X74P&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzAzOTM1ODg3NDM1MTMxOTM5Ng%3D%3D.3-ccb7-5&oh=00_AfVZl1N2UCZROc2y3J2Ap20zyf722c_066onYIVO2I-TDA&oe=68A65F14&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9z6b4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9z6b4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9z6b4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9z6b4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del1-1.cdninstagram.com/v/t51.29350-15/330890400_219875940499574_5937596969245110195_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjg4OXg2NjYuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=RMu_4m49Ct8Q7kNvwGDWSPM&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzAzOTM1ODg3NDM1OTgyMjY2Ng%3D%3D.3-ccb7-5&oh=00_AfWNBLOj_ON0BYzGMAQArfssQ5lJ_Wlh-AJwPgngdycVYQ&oe=68A65A7F&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del1-1.cdninstagram.com/v/t51.29350-15/330890400_219875940499574_5937596969245110195_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjg4OXg2NjYuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=RMu_4m49Ct8Q7kNvwGDWSPM&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzAzOTM1ODg3NDM1OTgyMjY2Ng%3D%3D.3-ccb7-5&oh=00_AfWNBLOj_ON0BYzGMAQArfssQ5lJ_Wlh-AJwPgngdycVYQ&oe=68A65A7F&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del1-1.cdninstagram.com/v/t51.29350-15/330890400_219875940499574_5937596969245110195_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjg4OXg2NjYuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=RMu_4m49Ct8Q7kNvwGDWSPM&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzAzOTM1ODg3NDM1OTgyMjY2Ng%3D%3D.3-ccb7-5&oh=00_AfWNBLOj_ON0BYzGMAQArfssQ5lJ_Wlh-AJwPgngdycVYQ&oe=68A65A7F&_nc_sid=b41fef" alt="https://scontent-del1-1.cdninstagram.com/v/t51.29350-15/330890400_219875940499574_5937596969245110195_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjg4OXg2NjYuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEzd5vZ9NZTcqT1WCQ_PKEBXGI05R7g_lhzw5kpM2PAq3N-psC2VglfmnSz5ZIMH7w&_nc_ohc=RMu_4m49Ct8Q7kNvwGDWSPM&_nc_gid=DSEllFU8CmxV7d9a8LTwng&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzAzOTM1ODg3NDM1OTgyMjY2Ng%3D%3D.3-ccb7-5&oh=00_AfWNBLOj_ON0BYzGMAQArfssQ5lJ_Wlh-AJwPgngdycVYQ&oe=68A65A7F&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/4gdcxm9z5r4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4gdcxm9z5r4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4gdcxm9z5r4.jpg" alt="https://cdn.imgchest.com/files/4gdcxm9z5r4.jpg" loading="lazy">
+<div class="justified-item">
+ <a href="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/326550024_740115493947419_2910801547632726016_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTQ0MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGcFki5R5paw7vnP0D4OzidiKe-FgMoYVcqfRX3O2dqKPAc37CdlE6QIxy7aamJ8Xo&_nc_ohc=aOAh6ChAfXsQ7kNvwEMtSig&_nc_gid=JMzgekUtqm_pP3CJlt5wPg&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzAyMTMzOTc0NTc5OTQ0MzYwOQ%3D%3D.3-ccb7-5&oh=00_AfVi41MtD0iSuCv3eEiygn9v6drGRvCSKq4LwqnM7lGs8g&oe=68A672CE&_nc_sid=b41fef" onclick="copyToClipboard('https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/326550024_740115493947419_2910801547632726016_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTQ0MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGcFki5R5paw7vnP0D4OzidiKe-FgMoYVcqfRX3O2dqKPAc37CdlE6QIxy7aamJ8Xo&_nc_ohc=aOAh6ChAfXsQ7kNvwEMtSig&_nc_gid=JMzgekUtqm_pP3CJlt5wPg&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzAyMTMzOTc0NTc5OTQ0MzYwOQ%3D%3D.3-ccb7-5&oh=00_AfVi41MtD0iSuCv3eEiygn9v6drGRvCSKq4LwqnM7lGs8g&oe=68A672CE&_nc_sid=b41fef'); event.preventDefault();">
+  <img src="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/326550024_740115493947419_2910801547632726016_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTQ0MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGcFki5R5paw7vnP0D4OzidiKe-FgMoYVcqfRX3O2dqKPAc37CdlE6QIxy7aamJ8Xo&_nc_ohc=aOAh6ChAfXsQ7kNvwEMtSig&_nc_gid=JMzgekUtqm_pP3CJlt5wPg&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzAyMTMzOTc0NTc5OTQ0MzYwOQ%3D%3D.3-ccb7-5&oh=00_AfVi41MtD0iSuCv3eEiygn9v6drGRvCSKq4LwqnM7lGs8g&oe=68A672CE&_nc_sid=b41fef" alt="https://scontent-del2-1.cdninstagram.com/v/t51.29350-15/326550024_740115493947419_2910801547632726016_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTQ0MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-del2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGcFki5R5paw7vnP0D4OzidiKe-FgMoYVcqfRX3O2dqKPAc37CdlE6QIxy7aamJ8Xo&_nc_ohc=aOAh6ChAfXsQ7kNvwEMtSig&_nc_gid=JMzgekUtqm_pP3CJlt5wPg&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzAyMTMzOTc0NTc5OTQ0MzYwOQ%3D%3D.3-ccb7-5&oh=00_AfVi41MtD0iSuCv3eEiygn9v6drGRvCSKq4LwqnM7lGs8g&oe=68A672CE&_nc_sid=b41fef" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/cc6gjv.JPG" onclick="copyToClipboard('https://files.catbox.moe/cc6gjv.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/cc6gjv.JPG" alt="https://files.catbox.moe/cc6gjv.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/cc6gjv.JPG" alt="https://files.catbox.moe/cc6gjv.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/c4yuuh.JPG" onclick="copyToClipboard('https://files.catbox.moe/c4yuuh.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/c4yuuh.JPG" alt="https://files.catbox.moe/c4yuuh.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/c4yuuh.JPG" alt="https://files.catbox.moe/c4yuuh.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://i.redd.it/21ryhhnubojf1.jpeg" onclick="copyToClipboard('https://i.redd.it/21ryhhnubojf1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/21ryhhnubojf1.jpeg" alt="https://i.redd.it/21ryhhnubojf1.jpeg" loading="lazy">
+<div class="justified-item">
+ <a href="https://i.redd.it/9ggtaiwluxhf1.jpg" onclick="copyToClipboard('https://i.redd.it/9ggtaiwluxhf1.jpg'); event.preventDefault();">
+  <img src="https://i.redd.it/9ggtaiwluxhf1.jpg" alt="https://i.redd.it/9ggtaiwluxhf1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/1o2twr4j2sod1.jpeg" onclick="copyToClipboard('https://i.redd.it/1o2twr4j2sod1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/1o2twr4j2sod1.jpeg" alt="https://i.redd.it/1o2twr4j2sod1.jpeg" loading="lazy">
+  <img src="https://i.redd.it/1o2twr4j2sod1.jpeg" alt="https://i.redd.it/1o2twr4j2sod1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/16jjafbo29wd1.jpeg" onclick="copyToClipboard('https://i.redd.it/16jjafbo29wd1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/16jjafbo29wd1.jpeg" alt="https://i.redd.it/16jjafbo29wd1.jpeg" loading="lazy">
+  <img src="https://i.redd.it/16jjafbo29wd1.jpeg" alt="https://i.redd.it/16jjafbo29wd1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://i.redd.it/1dzhhzs34lpd1.jpeg" onclick="copyToClipboard('https://i.redd.it/1dzhhzs34lpd1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/1dzhhzs34lpd1.jpeg" alt="https://i.redd.it/1dzhhzs34lpd1.jpeg" loading="lazy">
+<div class="justified-item">
+ <a href="https://cdn.imgchest.com/files/7pjcqkxbqq7.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/7pjcqkxbqq7.jpg'); event.preventDefault();">
+  <img src="https://cdn.imgchest.com/files/7pjcqkxbqq7.jpg" alt="https://cdn.imgchest.com/files/7pjcqkxbqq7.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/115cmbg7ql9b1.gif" onclick="copyToClipboard('https://i.redd.it/115cmbg7ql9b1.gif'); event.preventDefault();">
-  <img src="https://i.redd.it/115cmbg7ql9b1.gif" alt="https://i.redd.it/115cmbg7ql9b1.gif" loading="lazy">
+  <img src="https://i.redd.it/115cmbg7ql9b1.gif" alt="https://i.redd.it/115cmbg7ql9b1.gif" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://i.redd.it/29nbrslmjw4f1.jpeg" onclick="copyToClipboard('https://i.redd.it/29nbrslmjw4f1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/29nbrslmjw4f1.jpeg" alt="https://i.redd.it/29nbrslmjw4f1.jpeg" loading="lazy">
+<div class="justified-item">
+ <a href="https://i.redd.it/3dzh0cdl5und1.jpeg" onclick="copyToClipboard('https://i.redd.it/3dzh0cdl5und1.jpeg'); event.preventDefault();">
+  <img src="https://i.redd.it/3dzh0cdl5und1.jpeg" alt="https://i.redd.it/3dzh0cdl5und1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/15134718_1346119118739760_1434047943253192038_n.jpg?oh=4abd33873ca701fb69917ea0ae7d4276&oe=58BA3FD4" onclick="copyToClipboard('https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/15134718_1346119118739760_1434047943253192038_n.jpg?oh=4abd33873ca701fb69917ea0ae7d4276&oe=58BA3FD4'); event.preventDefault();">
-  <img src="https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/15134718_1346119118739760_1434047943253192038_n.jpg?oh=4abd33873ca701fb69917ea0ae7d4276&oe=58BA3FD4" alt="https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/15134718_1346119118739760_1434047943253192038_n.jpg?oh=4abd33873ca701fb69917ea0ae7d4276&oe=58BA3FD4" loading="lazy">
+<div class="justified-item">
+ <a href="https://cdn.imgchest.com/files/7pjcqkxbmb7.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/7pjcqkxbmb7.jpg'); event.preventDefault();">
+  <img src="https://cdn.imgchest.com/files/7pjcqkxbmb7.jpg" alt="https://cdn.imgchest.com/files/7pjcqkxbmb7.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/0rgnd6dswfxe1.png" onclick="copyToClipboard('https://i.redd.it/0rgnd6dswfxe1.png'); event.preventDefault();">
-  <img src="https://i.redd.it/0rgnd6dswfxe1.png" alt="https://i.redd.it/0rgnd6dswfxe1.png" loading="lazy">
+  <img src="https://i.redd.it/0rgnd6dswfxe1.png" alt="https://i.redd.it/0rgnd6dswfxe1.png" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="ytdl:https://v.redd.it/57f8kjc0gslb1" onclick="copyToClipboard('ytdl:https://v.redd.it/57f8kjc0gslb1'); event.preventDefault();">
-  <img src="ytdl:https://v.redd.it/57f8kjc0gslb1" alt="ytdl:https://v.redd.it/57f8kjc0gslb1" loading="lazy">
+<div class="justified-item">
+ <a href="https://i.redd.it/n0tk54teqb8e1.jpeg" onclick="copyToClipboard('https://i.redd.it/n0tk54teqb8e1.jpeg'); event.preventDefault();">
+  <img src="https://i.redd.it/n0tk54teqb8e1.jpeg" alt="https://i.redd.it/n0tk54teqb8e1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://i.redd.it/17sgxcu7rnjf1.jpeg" onclick="copyToClipboard('https://i.redd.it/17sgxcu7rnjf1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/17sgxcu7rnjf1.jpeg" alt="https://i.redd.it/17sgxcu7rnjf1.jpeg" loading="lazy">
+<div class="justified-item">
+ <a href="https://i.redd.it/uhhgxgyjkbq81.jpg" onclick="copyToClipboard('https://i.redd.it/uhhgxgyjkbq81.jpg'); event.preventDefault();">
+  <img src="https://i.redd.it/uhhgxgyjkbq81.jpg" alt="https://i.redd.it/uhhgxgyjkbq81.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://i.redd.it/3hiiksah1s7e1.gif" onclick="copyToClipboard('https://i.redd.it/3hiiksah1s7e1.gif'); event.preventDefault();">
-  <img src="https://i.redd.it/3hiiksah1s7e1.gif" alt="https://i.redd.it/3hiiksah1s7e1.gif" loading="lazy">
+<div class="justified-item">
+ <a href="https://i.redd.it/mzvpmzohpfod1.jpeg" onclick="copyToClipboard('https://i.redd.it/mzvpmzohpfod1.jpeg'); event.preventDefault();">
+  <img src="https://i.redd.it/mzvpmzohpfod1.jpeg" alt="https://i.redd.it/mzvpmzohpfod1.jpeg" 
+  >
  </a>
 </div>
     </div>
@@ -367,7 +419,7 @@
 <body style="margin:0;">
   <div style="
     position:fixed; inset:0;
-    background:url('https://cdn.imgchest.com/files/4gdcxm9zrj4.jpg') center/cover no-repeat;
+    background:url('https://i.redd.it/1o2twr4j2sod1.jpeg') center/cover no-repeat;
     filter:grayscale(50%) opacity(0.3);
     z-index:-1;
   "></div>

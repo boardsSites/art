@@ -14,9 +14,11 @@
 <body>
   <div style="
     position:fixed; inset:0;
-    background:url('https://cdn.imgchest.com/files/46acqgv2ra7.jpg') center top repeat-y;
+    background:
+        linear-gradient(#171717e2, #171717e2),  /* dark overlay */
+        url('https://cdn.imgchest.com/files/7pjcqkm3lo7.png') center top repeat-y;
     background-size: 100% auto;
-    filter:grayscale(50%) opacity(0.5);
+    filter:grayscale(50%) opacity(1);
     z-index:-1;
   "></div>
 </body>
@@ -28,61 +30,69 @@
         <input type="number" id="columnCountInput" min="1" max="10" value="5">
     </div>
     <div style="text-align:center; margin-bottom: 1em;">
-        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Justified</button>
+        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Masonry</button>
     </div>
     <p align="center"> Images on this page - 8, on this board - 8</p>
-    <p align="right"> Created on - 2025-09-01 01:23:23</p>
-    <p align="right"> Created with pixBoards version: 0.2.25</p>
+    <p align="right"> Created on - 2025-09-01 03:06:11</p>
+    <p align="right"> Created with pixBoards version: 0.2.26</p>
 
     <hr>
 
-    <div class="masonry-container">
+    <div id="gallery" class="justified-container">
         
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://cdn.imgchest.com/files/yxkczqx6em7.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/yxkczqx6em7.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/yxkczqx6em7.jpg" alt="https://cdn.imgchest.com/files/yxkczqx6em7.jpg" loading="lazy">
+  <img src="https://cdn.imgchest.com/files/yxkczqx6em7.jpg" alt="https://cdn.imgchest.com/files/yxkczqx6em7.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://cdn.imgchest.com/files/yvdcwn953zy.png" onclick="copyToClipboard('https://cdn.imgchest.com/files/yvdcwn953zy.png'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/yvdcwn953zy.png" alt="https://cdn.imgchest.com/files/yvdcwn953zy.png" loading="lazy">
+  <img src="https://cdn.imgchest.com/files/yvdcwn953zy.png" alt="https://cdn.imgchest.com/files/yvdcwn953zy.png" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://cdn.imgchest.com/files/7pjcqkm3lo7.png" onclick="copyToClipboard('https://cdn.imgchest.com/files/7pjcqkm3lo7.png'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/7pjcqkm3lo7.png" alt="https://cdn.imgchest.com/files/7pjcqkm3lo7.png" loading="lazy">
+  <img src="https://cdn.imgchest.com/files/7pjcqkm3lo7.png" alt="https://cdn.imgchest.com/files/7pjcqkm3lo7.png" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://cdn.imgchest.com/files/7bwck2jzmw7.png" onclick="copyToClipboard('https://cdn.imgchest.com/files/7bwck2jzmw7.png'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/7bwck2jzmw7.png" alt="https://cdn.imgchest.com/files/7bwck2jzmw7.png" loading="lazy">
+  <img src="https://cdn.imgchest.com/files/7bwck2jzmw7.png" alt="https://cdn.imgchest.com/files/7bwck2jzmw7.png" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://cdn.imgchest.com/files/4nec8lop9k4.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/4nec8lop9k4.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4nec8lop9k4.jpg" alt="https://cdn.imgchest.com/files/4nec8lop9k4.jpg" loading="lazy">
+  <img src="https://cdn.imgchest.com/files/4nec8lop9k4.jpg" alt="https://cdn.imgchest.com/files/4nec8lop9k4.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://cdn.imgchest.com/files/4apc5vlerl4.png" onclick="copyToClipboard('https://cdn.imgchest.com/files/4apc5vlerl4.png'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/4apc5vlerl4.png" alt="https://cdn.imgchest.com/files/4apc5vlerl4.png" loading="lazy">
+  <img src="https://cdn.imgchest.com/files/4apc5vlerl4.png" alt="https://cdn.imgchest.com/files/4apc5vlerl4.png" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://cdn.imgchest.com/files/49zc2vkqj6y.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/49zc2vkqj6y.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/49zc2vkqj6y.jpg" alt="https://cdn.imgchest.com/files/49zc2vkqj6y.jpg" loading="lazy">
+  <img src="https://cdn.imgchest.com/files/49zc2vkqj6y.jpg" alt="https://cdn.imgchest.com/files/49zc2vkqj6y.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://cdn.imgchest.com/files/46acqgv2ra7.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/46acqgv2ra7.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/46acqgv2ra7.jpg" alt="https://cdn.imgchest.com/files/46acqgv2ra7.jpg" loading="lazy">
+  <img src="https://cdn.imgchest.com/files/46acqgv2ra7.jpg" alt="https://cdn.imgchest.com/files/46acqgv2ra7.jpg" 
+  >
  </a>
 </div>
     </div>
@@ -100,7 +110,7 @@
 <body style="margin:0;">
   <div style="
     position:fixed; inset:0;
-    background:url('https://cdn.imgchest.com/files/46acqgv2ra7.jpg') center/cover no-repeat;
+    background:url('https://cdn.imgchest.com/files/7pjcqkm3lo7.png') center/cover no-repeat;
     filter:grayscale(50%) opacity(0.3);
     z-index:-1;
   "></div>

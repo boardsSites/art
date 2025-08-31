@@ -14,9 +14,11 @@
 <body>
   <div style="
     position:fixed; inset:0;
-    background:url('https://files.catbox.moe/0391qe.jpg') center top repeat-y;
+    background:
+        linear-gradient(#171717e2, #171717e2),  /* dark overlay */
+        url('https://files.catbox.moe/0391qe.jpg') center top repeat-y;
     background-size: 100% auto;
-    filter:grayscale(50%) opacity(0.5);
+    filter:grayscale(50%) opacity(1);
     z-index:-1;
   "></div>
 </body>
@@ -28,31 +30,34 @@
         <input type="number" id="columnCountInput" min="1" max="10" value="5">
     </div>
     <div style="text-align:center; margin-bottom: 1em;">
-        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Justified</button>
+        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Masonry</button>
     </div>
     <p align="center"> Images on this page - 3, on this board - 503</p>
-    <p align="right"> Created on - 2025-09-01 01:23:23</p>
-    <p align="right"> Created with pixBoards version: 0.2.25</p>
+    <p align="right"> Created on - 2025-09-01 03:06:11</p>
+    <p align="right"> Created with pixBoards version: 0.2.26</p>
 
     <hr>
 
-    <div class="masonry-container">
+    <div id="gallery" class="justified-container">
         
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/04fl14.jpg" onclick="copyToClipboard('https://files.catbox.moe/04fl14.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/04fl14.jpg" alt="https://files.catbox.moe/04fl14.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/04fl14.jpg" alt="https://files.catbox.moe/04fl14.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/0391qe.jpg" onclick="copyToClipboard('https://files.catbox.moe/0391qe.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/0391qe.jpg" alt="https://files.catbox.moe/0391qe.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/0391qe.jpg" alt="https://files.catbox.moe/0391qe.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/01mwo3.jpg" onclick="copyToClipboard('https://files.catbox.moe/01mwo3.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/01mwo3.jpg" alt="https://files.catbox.moe/01mwo3.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/01mwo3.jpg" alt="https://files.catbox.moe/01mwo3.jpg" 
+  >
  </a>
 </div>
     </div>

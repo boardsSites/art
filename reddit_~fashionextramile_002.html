@@ -14,9 +14,11 @@
 <body>
   <div style="
     position:fixed; inset:0;
-    background:url('https://i.redd.it/75aitm94ptre1.jpeg') center top repeat-y;
+    background:
+        linear-gradient(#171717e2, #171717e2),  /* dark overlay */
+        url('https://i.redd.it/fggw928yb2ue1.jpg') center top repeat-y;
     background-size: 100% auto;
-    filter:grayscale(50%) opacity(0.5);
+    filter:grayscale(50%) opacity(1);
     z-index:-1;
   "></div>
 </body>
@@ -28,313 +30,363 @@
         <input type="number" id="columnCountInput" min="1" max="10" value="5">
     </div>
     <div style="text-align:center; margin-bottom: 1em;">
-        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Justified</button>
+        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Masonry</button>
     </div>
     <p align="center"> Images on this page - 50, on this board - 100</p>
-    <p align="right"> Created on - 2025-09-01 01:23:23</p>
-    <p align="right"> Created with pixBoards version: 0.2.25</p>
+    <p align="right"> Created on - 2025-09-01 03:06:11</p>
+    <p align="right"> Created with pixBoards version: 0.2.26</p>
 
     <hr>
 
-    <div class="masonry-container">
+    <div id="gallery" class="justified-container">
         
-<div class="masonry-item">
+<div class="justified-item">
+ <a href="https://i.redd.it/h0wmn7hs7wie1.jpg" onclick="copyToClipboard('https://i.redd.it/h0wmn7hs7wie1.jpg'); event.preventDefault();">
+  <img src="https://i.redd.it/h0wmn7hs7wie1.jpg" alt="https://i.redd.it/h0wmn7hs7wie1.jpg" 
+  >
+ </a>
+</div>
+
+<div class="justified-item">
+ <a href="https://i.redd.it/g4iwjcmxb2ue1.jpg" onclick="copyToClipboard('https://i.redd.it/g4iwjcmxb2ue1.jpg'); event.preventDefault();">
+  <img src="https://i.redd.it/g4iwjcmxb2ue1.jpg" alt="https://i.redd.it/g4iwjcmxb2ue1.jpg" 
+  >
+ </a>
+</div>
+
+<div class="justified-item">
+ <a href="https://i.redd.it/g2832eabkrue1.jpg" onclick="copyToClipboard('https://i.redd.it/g2832eabkrue1.jpg'); event.preventDefault();">
+  <img src="https://i.redd.it/g2832eabkrue1.jpg" alt="https://i.redd.it/g2832eabkrue1.jpg" 
+  >
+ </a>
+</div>
+
+<div class="justified-item">
+ <a href="https://i.redd.it/fwneghvwb2ue1.jpg" onclick="copyToClipboard('https://i.redd.it/fwneghvwb2ue1.jpg'); event.preventDefault();">
+  <img src="https://i.redd.it/fwneghvwb2ue1.jpg" alt="https://i.redd.it/fwneghvwb2ue1.jpg" 
+  >
+ </a>
+</div>
+
+<div class="justified-item">
+ <a href="https://i.redd.it/fw8hpdy7cagb1.jpg" onclick="copyToClipboard('https://i.redd.it/fw8hpdy7cagb1.jpg'); event.preventDefault();">
+  <img src="https://i.redd.it/fw8hpdy7cagb1.jpg" alt="https://i.redd.it/fw8hpdy7cagb1.jpg" 
+  >
+ </a>
+</div>
+
+<div class="justified-item">
+ <a href="https://i.redd.it/fggw928yb2ue1.jpg" onclick="copyToClipboard('https://i.redd.it/fggw928yb2ue1.jpg'); event.preventDefault();">
+  <img src="https://i.redd.it/fggw928yb2ue1.jpg" alt="https://i.redd.it/fggw928yb2ue1.jpg" 
+  >
+ </a>
+</div>
+
+<div class="justified-item">
  <a href="https://i.redd.it/f7pqlpzgi6ee1.jpeg" onclick="copyToClipboard('https://i.redd.it/f7pqlpzgi6ee1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/f7pqlpzgi6ee1.jpeg" alt="https://i.redd.it/f7pqlpzgi6ee1.jpeg" loading="lazy">
+  <img src="https://i.redd.it/f7pqlpzgi6ee1.jpeg" alt="https://i.redd.it/f7pqlpzgi6ee1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/f5wj8pgyb2ue1.jpg" onclick="copyToClipboard('https://i.redd.it/f5wj8pgyb2ue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/f5wj8pgyb2ue1.jpg" alt="https://i.redd.it/f5wj8pgyb2ue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/f5wj8pgyb2ue1.jpg" alt="https://i.redd.it/f5wj8pgyb2ue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/f1glumayb2ue1.jpg" onclick="copyToClipboard('https://i.redd.it/f1glumayb2ue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/f1glumayb2ue1.jpg" alt="https://i.redd.it/f1glumayb2ue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/f1glumayb2ue1.jpg" alt="https://i.redd.it/f1glumayb2ue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/est373me7lff1.jpeg" onclick="copyToClipboard('https://i.redd.it/est373me7lff1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/est373me7lff1.jpeg" alt="https://i.redd.it/est373me7lff1.jpeg" loading="lazy">
+  <img src="https://i.redd.it/est373me7lff1.jpeg" alt="https://i.redd.it/est373me7lff1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/eefhbfevuh8e1.jpeg" onclick="copyToClipboard('https://i.redd.it/eefhbfevuh8e1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/eefhbfevuh8e1.jpeg" alt="https://i.redd.it/eefhbfevuh8e1.jpeg" loading="lazy">
+  <img src="https://i.redd.it/eefhbfevuh8e1.jpeg" alt="https://i.redd.it/eefhbfevuh8e1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/dwrfualjwude1.jpg" onclick="copyToClipboard('https://i.redd.it/dwrfualjwude1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/dwrfualjwude1.jpg" alt="https://i.redd.it/dwrfualjwude1.jpg" loading="lazy">
+  <img src="https://i.redd.it/dwrfualjwude1.jpg" alt="https://i.redd.it/dwrfualjwude1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/dqv56a4fk3ae1.jpeg" onclick="copyToClipboard('https://i.redd.it/dqv56a4fk3ae1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/dqv56a4fk3ae1.jpeg" alt="https://i.redd.it/dqv56a4fk3ae1.jpeg" loading="lazy">
+  <img src="https://i.redd.it/dqv56a4fk3ae1.jpeg" alt="https://i.redd.it/dqv56a4fk3ae1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/dj3t8zoj9w5f1.jpg" onclick="copyToClipboard('https://i.redd.it/dj3t8zoj9w5f1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/dj3t8zoj9w5f1.jpg" alt="https://i.redd.it/dj3t8zoj9w5f1.jpg" loading="lazy">
+  <img src="https://i.redd.it/dj3t8zoj9w5f1.jpg" alt="https://i.redd.it/dj3t8zoj9w5f1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/cx8fgf5d00fe1.jpg" onclick="copyToClipboard('https://i.redd.it/cx8fgf5d00fe1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/cx8fgf5d00fe1.jpg" alt="https://i.redd.it/cx8fgf5d00fe1.jpg" loading="lazy">
+  <img src="https://i.redd.it/cx8fgf5d00fe1.jpg" alt="https://i.redd.it/cx8fgf5d00fe1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/byg6oe1jxhcd1.jpg" onclick="copyToClipboard('https://i.redd.it/byg6oe1jxhcd1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/byg6oe1jxhcd1.jpg" alt="https://i.redd.it/byg6oe1jxhcd1.jpg" loading="lazy">
+  <img src="https://i.redd.it/byg6oe1jxhcd1.jpg" alt="https://i.redd.it/byg6oe1jxhcd1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/bvnepf5d00fe1.jpg" onclick="copyToClipboard('https://i.redd.it/bvnepf5d00fe1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/bvnepf5d00fe1.jpg" alt="https://i.redd.it/bvnepf5d00fe1.jpg" loading="lazy">
+  <img src="https://i.redd.it/bvnepf5d00fe1.jpg" alt="https://i.redd.it/bvnepf5d00fe1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/bnywmdabkrue1.jpg" onclick="copyToClipboard('https://i.redd.it/bnywmdabkrue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/bnywmdabkrue1.jpg" alt="https://i.redd.it/bnywmdabkrue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/bnywmdabkrue1.jpg" alt="https://i.redd.it/bnywmdabkrue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/bns3gq91ke9d1.jpg" onclick="copyToClipboard('https://i.redd.it/bns3gq91ke9d1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/bns3gq91ke9d1.jpg" alt="https://i.redd.it/bns3gq91ke9d1.jpg" loading="lazy">
+  <img src="https://i.redd.it/bns3gq91ke9d1.jpg" alt="https://i.redd.it/bns3gq91ke9d1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/b4om5yf9xvle1.jpg" onclick="copyToClipboard('https://i.redd.it/b4om5yf9xvle1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/b4om5yf9xvle1.jpg" alt="https://i.redd.it/b4om5yf9xvle1.jpg" loading="lazy">
+  <img src="https://i.redd.it/b4om5yf9xvle1.jpg" alt="https://i.redd.it/b4om5yf9xvle1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/b1fsui5xb2ue1.jpg" onclick="copyToClipboard('https://i.redd.it/b1fsui5xb2ue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/b1fsui5xb2ue1.jpg" alt="https://i.redd.it/b1fsui5xb2ue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/b1fsui5xb2ue1.jpg" alt="https://i.redd.it/b1fsui5xb2ue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/asvkj7hs7wie1.jpg" onclick="copyToClipboard('https://i.redd.it/asvkj7hs7wie1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/asvkj7hs7wie1.jpg" alt="https://i.redd.it/asvkj7hs7wie1.jpg" loading="lazy">
+  <img src="https://i.redd.it/asvkj7hs7wie1.jpg" alt="https://i.redd.it/asvkj7hs7wie1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/ab7ge955fzff1.png" onclick="copyToClipboard('https://i.redd.it/ab7ge955fzff1.png'); event.preventDefault();">
-  <img src="https://i.redd.it/ab7ge955fzff1.png" alt="https://i.redd.it/ab7ge955fzff1.png" loading="lazy">
+  <img src="https://i.redd.it/ab7ge955fzff1.png" alt="https://i.redd.it/ab7ge955fzff1.png" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://files.catbox.moe/9v1ws4.jpg" onclick="copyToClipboard('https://files.catbox.moe/9v1ws4.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/9v1ws4.jpg" alt="https://files.catbox.moe/9v1ws4.jpg" loading="lazy">
- </a>
-</div>
-
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/9pzyfdabkrue1.jpg" onclick="copyToClipboard('https://i.redd.it/9pzyfdabkrue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/9pzyfdabkrue1.jpg" alt="https://i.redd.it/9pzyfdabkrue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/9pzyfdabkrue1.jpg" alt="https://i.redd.it/9pzyfdabkrue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/9ey6abdxb2ue1.jpg" onclick="copyToClipboard('https://i.redd.it/9ey6abdxb2ue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/9ey6abdxb2ue1.jpg" alt="https://i.redd.it/9ey6abdxb2ue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/9ey6abdxb2ue1.jpg" alt="https://i.redd.it/9ey6abdxb2ue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/9cnb3eabkrue1.jpg" onclick="copyToClipboard('https://i.redd.it/9cnb3eabkrue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/9cnb3eabkrue1.jpg" alt="https://i.redd.it/9cnb3eabkrue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/9cnb3eabkrue1.jpg" alt="https://i.redd.it/9cnb3eabkrue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/8kdrr3czukbe1.jpeg" onclick="copyToClipboard('https://i.redd.it/8kdrr3czukbe1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/8kdrr3czukbe1.jpeg" alt="https://i.redd.it/8kdrr3czukbe1.jpeg" loading="lazy">
+  <img src="https://i.redd.it/8kdrr3czukbe1.jpeg" alt="https://i.redd.it/8kdrr3czukbe1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/8i1e5dz0ke9d1.jpg" onclick="copyToClipboard('https://i.redd.it/8i1e5dz0ke9d1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/8i1e5dz0ke9d1.jpg" alt="https://i.redd.it/8i1e5dz0ke9d1.jpg" loading="lazy">
+  <img src="https://i.redd.it/8i1e5dz0ke9d1.jpg" alt="https://i.redd.it/8i1e5dz0ke9d1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/8bjgiosxb2ue1.jpg" onclick="copyToClipboard('https://i.redd.it/8bjgiosxb2ue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/8bjgiosxb2ue1.jpg" alt="https://i.redd.it/8bjgiosxb2ue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/8bjgiosxb2ue1.jpg" alt="https://i.redd.it/8bjgiosxb2ue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/7yv6e6x53bxd1.jpeg" onclick="copyToClipboard('https://i.redd.it/7yv6e6x53bxd1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/7yv6e6x53bxd1.jpeg" alt="https://i.redd.it/7yv6e6x53bxd1.jpeg" loading="lazy">
+  <img src="https://i.redd.it/7yv6e6x53bxd1.jpeg" alt="https://i.redd.it/7yv6e6x53bxd1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/7pjcq3alz67.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/7pjcq3alz67.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/7pjcq3alz67.jpg" alt="https://cdn.imgchest.com/files/7pjcq3alz67.jpg" loading="lazy">
- </a>
-</div>
-
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/7ogcbml2gky.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/7ogcbml2gky.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/7ogcbml2gky.jpg" alt="https://cdn.imgchest.com/files/7ogcbml2gky.jpg" loading="lazy">
- </a>
-</div>
-
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/7nqjwdabkrue1.jpg" onclick="copyToClipboard('https://i.redd.it/7nqjwdabkrue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/7nqjwdabkrue1.jpg" alt="https://i.redd.it/7nqjwdabkrue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/7nqjwdabkrue1.jpg" alt="https://i.redd.it/7nqjwdabkrue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/7n5ptd2xb2ue1.jpg" onclick="copyToClipboard('https://i.redd.it/7n5ptd2xb2ue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/7n5ptd2xb2ue1.jpg" alt="https://i.redd.it/7n5ptd2xb2ue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/7n5ptd2xb2ue1.jpg" alt="https://i.redd.it/7n5ptd2xb2ue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/7lxcpq9ve57.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/7lxcpq9ve57.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/7lxcpq9ve57.jpg" alt="https://cdn.imgchest.com/files/7lxcpq9ve57.jpg" loading="lazy">
- </a>
-</div>
-
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/7iiohsdyb2ue1.jpg" onclick="copyToClipboard('https://i.redd.it/7iiohsdyb2ue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/7iiohsdyb2ue1.jpg" alt="https://i.redd.it/7iiohsdyb2ue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/7iiohsdyb2ue1.jpg" alt="https://i.redd.it/7iiohsdyb2ue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://cdn.imgchest.com/files/7bwckz9mao7.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/7bwckz9mao7.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/7bwckz9mao7.jpg" alt="https://cdn.imgchest.com/files/7bwckz9mao7.jpg" loading="lazy">
- </a>
-</div>
-
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/75aitm94ptre1.jpeg" onclick="copyToClipboard('https://i.redd.it/75aitm94ptre1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/75aitm94ptre1.jpeg" alt="https://i.redd.it/75aitm94ptre1.jpeg" loading="lazy">
+  <img src="https://i.redd.it/75aitm94ptre1.jpeg" alt="https://i.redd.it/75aitm94ptre1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://files.catbox.moe/6sdp5i.jpg" onclick="copyToClipboard('https://files.catbox.moe/6sdp5i.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/6sdp5i.jpg" alt="https://files.catbox.moe/6sdp5i.jpg" loading="lazy">
- </a>
-</div>
-
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/6ru68wnxtyeb1.jpg" onclick="copyToClipboard('https://i.redd.it/6ru68wnxtyeb1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/6ru68wnxtyeb1.jpg" alt="https://i.redd.it/6ru68wnxtyeb1.jpg" loading="lazy">
+  <img src="https://i.redd.it/6ru68wnxtyeb1.jpg" alt="https://i.redd.it/6ru68wnxtyeb1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/6oggtb0yb2ue1.jpg" onclick="copyToClipboard('https://i.redd.it/6oggtb0yb2ue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/6oggtb0yb2ue1.jpg" alt="https://i.redd.it/6oggtb0yb2ue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/6oggtb0yb2ue1.jpg" alt="https://i.redd.it/6oggtb0yb2ue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/6ba49qvxb2ue1.jpg" onclick="copyToClipboard('https://i.redd.it/6ba49qvxb2ue1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/6ba49qvxb2ue1.jpg" alt="https://i.redd.it/6ba49qvxb2ue1.jpg" loading="lazy">
+  <img src="https://i.redd.it/6ba49qvxb2ue1.jpg" alt="https://i.redd.it/6ba49qvxb2ue1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/618ghhblb0i81.jpg" onclick="copyToClipboard('https://i.redd.it/618ghhblb0i81.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/618ghhblb0i81.jpg" alt="https://i.redd.it/618ghhblb0i81.jpg" loading="lazy">
+  <img src="https://i.redd.it/618ghhblb0i81.jpg" alt="https://i.redd.it/618ghhblb0i81.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/596gpaz8xvle1.jpg" onclick="copyToClipboard('https://i.redd.it/596gpaz8xvle1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/596gpaz8xvle1.jpg" alt="https://i.redd.it/596gpaz8xvle1.jpg" loading="lazy">
+  <img src="https://i.redd.it/596gpaz8xvle1.jpg" alt="https://i.redd.it/596gpaz8xvle1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/52pjqehtbvee1.jpeg" onclick="copyToClipboard('https://i.redd.it/52pjqehtbvee1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/52pjqehtbvee1.jpeg" alt="https://i.redd.it/52pjqehtbvee1.jpeg" loading="lazy">
+  <img src="https://i.redd.it/52pjqehtbvee1.jpeg" alt="https://i.redd.it/52pjqehtbvee1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/4zabq7hs7wie1.jpg" onclick="copyToClipboard('https://i.redd.it/4zabq7hs7wie1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/4zabq7hs7wie1.jpg" alt="https://i.redd.it/4zabq7hs7wie1.jpg" loading="lazy">
+  <img src="https://i.redd.it/4zabq7hs7wie1.jpg" alt="https://i.redd.it/4zabq7hs7wie1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/4pvwv9s0ke9d1.jpg" onclick="copyToClipboard('https://i.redd.it/4pvwv9s0ke9d1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/4pvwv9s0ke9d1.jpg" alt="https://i.redd.it/4pvwv9s0ke9d1.jpg" loading="lazy">
+  <img src="https://i.redd.it/4pvwv9s0ke9d1.jpg" alt="https://i.redd.it/4pvwv9s0ke9d1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/3r8qp971ke9d1.jpg" onclick="copyToClipboard('https://i.redd.it/3r8qp971ke9d1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/3r8qp971ke9d1.jpg" alt="https://i.redd.it/3r8qp971ke9d1.jpg" loading="lazy">
+  <img src="https://i.redd.it/3r8qp971ke9d1.jpg" alt="https://i.redd.it/3r8qp971ke9d1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/3ea4vcv9xvle1.jpg" onclick="copyToClipboard('https://i.redd.it/3ea4vcv9xvle1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/3ea4vcv9xvle1.jpg" alt="https://i.redd.it/3ea4vcv9xvle1.jpg" loading="lazy">
+  <img src="https://i.redd.it/3ea4vcv9xvle1.jpg" alt="https://i.redd.it/3ea4vcv9xvle1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
+ <a href="https://i.redd.it/2tayw6tcv2qe1.jpg" onclick="copyToClipboard('https://i.redd.it/2tayw6tcv2qe1.jpg'); event.preventDefault();">
+  <img src="https://i.redd.it/2tayw6tcv2qe1.jpg" alt="https://i.redd.it/2tayw6tcv2qe1.jpg" 
+  >
+ </a>
+</div>
+
+<div class="justified-item">
  <a href="https://i.redd.it/237x40ktg19f1.jpg" onclick="copyToClipboard('https://i.redd.it/237x40ktg19f1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/237x40ktg19f1.jpg" alt="https://i.redd.it/237x40ktg19f1.jpg" loading="lazy">
+  <img src="https://i.redd.it/237x40ktg19f1.jpg" alt="https://i.redd.it/237x40ktg19f1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/1ijphkk562oe1.jpeg" onclick="copyToClipboard('https://i.redd.it/1ijphkk562oe1.jpeg'); event.preventDefault();">
-  <img src="https://i.redd.it/1ijphkk562oe1.jpeg" alt="https://i.redd.it/1ijphkk562oe1.jpeg" loading="lazy">
+  <img src="https://i.redd.it/1ijphkk562oe1.jpeg" alt="https://i.redd.it/1ijphkk562oe1.jpeg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/12hmnd5d00fe1.jpg" onclick="copyToClipboard('https://i.redd.it/12hmnd5d00fe1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/12hmnd5d00fe1.jpg" alt="https://i.redd.it/12hmnd5d00fe1.jpg" loading="lazy">
+  <img src="https://i.redd.it/12hmnd5d00fe1.jpg" alt="https://i.redd.it/12hmnd5d00fe1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
- <a href="https://files.catbox.moe/0rylr1.jpg" onclick="copyToClipboard('https://files.catbox.moe/0rylr1.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/0rylr1.jpg" alt="https://files.catbox.moe/0rylr1.jpg" loading="lazy">
- </a>
-</div>
-
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/0n1rm8hs7wie1.jpg" onclick="copyToClipboard('https://i.redd.it/0n1rm8hs7wie1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/0n1rm8hs7wie1.jpg" alt="https://i.redd.it/0n1rm8hs7wie1.jpg" loading="lazy">
+  <img src="https://i.redd.it/0n1rm8hs7wie1.jpg" alt="https://i.redd.it/0n1rm8hs7wie1.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.redd.it/0a40c3wxtyeb1.jpg" onclick="copyToClipboard('https://i.redd.it/0a40c3wxtyeb1.jpg'); event.preventDefault();">
-  <img src="https://i.redd.it/0a40c3wxtyeb1.jpg" alt="https://i.redd.it/0a40c3wxtyeb1.jpg" loading="lazy">
+  <img src="https://i.redd.it/0a40c3wxtyeb1.jpg" alt="https://i.redd.it/0a40c3wxtyeb1.jpg" 
+  >
  </a>
 </div>
     </div>
@@ -367,7 +419,7 @@
 <body style="margin:0;">
   <div style="
     position:fixed; inset:0;
-    background:url('https://i.redd.it/75aitm94ptre1.jpeg') center/cover no-repeat;
+    background:url('https://i.redd.it/fggw928yb2ue1.jpg') center/cover no-repeat;
     filter:grayscale(50%) opacity(0.3);
     z-index:-1;
   "></div>

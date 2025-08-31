@@ -14,9 +14,11 @@
 <body>
   <div style="
     position:fixed; inset:0;
-    background:url('https://cdn.imgchest.com/files/45xcv2m8e57.jpg') center top repeat-y;
+    background:
+        linear-gradient(#171717e2, #171717e2),  /* dark overlay */
+        url('https://files.catbox.moe/39vma3.jpg') center top repeat-y;
     background-size: 100% auto;
-    filter:grayscale(50%) opacity(0.5);
+    filter:grayscale(50%) opacity(1);
     z-index:-1;
   "></div>
 </body>
@@ -28,61 +30,69 @@
         <input type="number" id="columnCountInput" min="1" max="10" value="5">
     </div>
     <div style="text-align:center; margin-bottom: 1em;">
-        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Justified</button>
+        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Masonry</button>
     </div>
     <p align="center"> Images on this page - 8, on this board - 108</p>
-    <p align="right"> Created on - 2025-09-01 01:23:23</p>
-    <p align="right"> Created with pixBoards version: 0.2.25</p>
+    <p align="right"> Created on - 2025-09-01 03:06:11</p>
+    <p align="right"> Created with pixBoards version: 0.2.26</p>
 
     <hr>
 
-    <div class="masonry-container">
+    <div id="gallery" class="justified-container">
         
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://cdn.imgchest.com/files/45xcv2m8qz7.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/45xcv2m8qz7.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/45xcv2m8qz7.jpg" alt="https://cdn.imgchest.com/files/45xcv2m8qz7.jpg" loading="lazy">
+  <img src="https://cdn.imgchest.com/files/45xcv2m8qz7.jpg" alt="https://cdn.imgchest.com/files/45xcv2m8qz7.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://cdn.imgchest.com/files/45xcv2m8e57.jpg" onclick="copyToClipboard('https://cdn.imgchest.com/files/45xcv2m8e57.jpg'); event.preventDefault();">
-  <img src="https://cdn.imgchest.com/files/45xcv2m8e57.jpg" alt="https://cdn.imgchest.com/files/45xcv2m8e57.jpg" loading="lazy">
+  <img src="https://cdn.imgchest.com/files/45xcv2m8e57.jpg" alt="https://cdn.imgchest.com/files/45xcv2m8e57.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/43gfu3.jpg" onclick="copyToClipboard('https://files.catbox.moe/43gfu3.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/43gfu3.jpg" alt="https://files.catbox.moe/43gfu3.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/43gfu3.jpg" alt="https://files.catbox.moe/43gfu3.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/39vma3.jpg" onclick="copyToClipboard('https://files.catbox.moe/39vma3.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/39vma3.jpg" alt="https://files.catbox.moe/39vma3.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/39vma3.jpg" alt="https://files.catbox.moe/39vma3.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/16bptj.jpg" onclick="copyToClipboard('https://files.catbox.moe/16bptj.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/16bptj.jpg" alt="https://files.catbox.moe/16bptj.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/16bptj.jpg" alt="https://files.catbox.moe/16bptj.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/0tdq4o.jpg" onclick="copyToClipboard('https://files.catbox.moe/0tdq4o.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/0tdq4o.jpg" alt="https://files.catbox.moe/0tdq4o.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/0tdq4o.jpg" alt="https://files.catbox.moe/0tdq4o.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/0relq9.jpg" onclick="copyToClipboard('https://files.catbox.moe/0relq9.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/0relq9.jpg" alt="https://files.catbox.moe/0relq9.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/0relq9.jpg" alt="https://files.catbox.moe/0relq9.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/0ifcco.jpg" onclick="copyToClipboard('https://files.catbox.moe/0ifcco.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/0ifcco.jpg" alt="https://files.catbox.moe/0ifcco.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/0ifcco.jpg" alt="https://files.catbox.moe/0ifcco.jpg" 
+  >
  </a>
 </div>
     </div>
@@ -115,7 +125,7 @@
 <body style="margin:0;">
   <div style="
     position:fixed; inset:0;
-    background:url('https://cdn.imgchest.com/files/45xcv2m8e57.jpg') center/cover no-repeat;
+    background:url('https://files.catbox.moe/39vma3.jpg') center/cover no-repeat;
     filter:grayscale(50%) opacity(0.3);
     z-index:-1;
   "></div>

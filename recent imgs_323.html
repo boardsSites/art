@@ -14,9 +14,11 @@
 <body>
   <div style="
     position:fixed; inset:0;
-    background:url('https://files.catbox.moe/siyn14.jpg') center top repeat-y;
+    background:
+        linear-gradient(#171717e2, #171717e2),  /* dark overlay */
+        url('https://files.catbox.moe/qrulhw.jpg') center top repeat-y;
     background-size: 100% auto;
-    filter:grayscale(50%) opacity(0.5);
+    filter:grayscale(50%) opacity(1);
     z-index:-1;
   "></div>
 </body>
@@ -28,313 +30,363 @@
         <input type="number" id="columnCountInput" min="1" max="10" value="5">
     </div>
     <div style="text-align:center; margin-bottom: 1em;">
-        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Justified</button>
+        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Masonry</button>
     </div>
     <p align="center"> Images on this page - 50, on this board - 53097</p>
-    <p align="right"> Created on - 2025-09-01 01:23:23</p>
-    <p align="right"> Created with pixBoards version: 0.2.25</p>
+    <p align="right"> Created on - 2025-09-01 03:06:11</p>
+    <p align="right"> Created with pixBoards version: 0.2.26</p>
 
     <hr>
 
-    <div class="masonry-container">
+    <div id="gallery" class="justified-container">
         
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/sm2cvh.jpg" onclick="copyToClipboard('https://files.catbox.moe/sm2cvh.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/sm2cvh.jpg" alt="https://files.catbox.moe/sm2cvh.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/sm2cvh.jpg" alt="https://files.catbox.moe/sm2cvh.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/ska759.jpg" onclick="copyToClipboard('https://files.catbox.moe/ska759.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/ska759.jpg" alt="https://files.catbox.moe/ska759.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/ska759.jpg" alt="https://files.catbox.moe/ska759.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/siyn14.jpg" onclick="copyToClipboard('https://files.catbox.moe/siyn14.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/siyn14.jpg" alt="https://files.catbox.moe/siyn14.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/siyn14.jpg" alt="https://files.catbox.moe/siyn14.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/shgjak.jpg" onclick="copyToClipboard('https://files.catbox.moe/shgjak.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/shgjak.jpg" alt="https://files.catbox.moe/shgjak.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/shgjak.jpg" alt="https://files.catbox.moe/shgjak.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/shg17o.jpg" onclick="copyToClipboard('https://files.catbox.moe/shg17o.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/shg17o.jpg" alt="https://files.catbox.moe/shg17o.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/shg17o.jpg" alt="https://files.catbox.moe/shg17o.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/se2amf.jpg" onclick="copyToClipboard('https://files.catbox.moe/se2amf.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/se2amf.jpg" alt="https://files.catbox.moe/se2amf.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/se2amf.jpg" alt="https://files.catbox.moe/se2amf.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/sardjl.jpg" onclick="copyToClipboard('https://files.catbox.moe/sardjl.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/sardjl.jpg" alt="https://files.catbox.moe/sardjl.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/sardjl.jpg" alt="https://files.catbox.moe/sardjl.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/s51gex.jpg" onclick="copyToClipboard('https://files.catbox.moe/s51gex.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/s51gex.jpg" alt="https://files.catbox.moe/s51gex.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/s51gex.jpg" alt="https://files.catbox.moe/s51gex.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/ryx7df.jpg" onclick="copyToClipboard('https://files.catbox.moe/ryx7df.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/ryx7df.jpg" alt="https://files.catbox.moe/ryx7df.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/ryx7df.jpg" alt="https://files.catbox.moe/ryx7df.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/ryd87q.jpg" onclick="copyToClipboard('https://files.catbox.moe/ryd87q.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/ryd87q.jpg" alt="https://files.catbox.moe/ryd87q.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/ryd87q.jpg" alt="https://files.catbox.moe/ryd87q.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rv2wl0.jpg" onclick="copyToClipboard('https://files.catbox.moe/rv2wl0.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rv2wl0.jpg" alt="https://files.catbox.moe/rv2wl0.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rv2wl0.jpg" alt="https://files.catbox.moe/rv2wl0.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/ruyp5z.jpg" onclick="copyToClipboard('https://files.catbox.moe/ruyp5z.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/ruyp5z.jpg" alt="https://files.catbox.moe/ruyp5z.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/ruyp5z.jpg" alt="https://files.catbox.moe/ruyp5z.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rs63x4.jpg" onclick="copyToClipboard('https://files.catbox.moe/rs63x4.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rs63x4.jpg" alt="https://files.catbox.moe/rs63x4.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rs63x4.jpg" alt="https://files.catbox.moe/rs63x4.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rrk10k.jpg" onclick="copyToClipboard('https://files.catbox.moe/rrk10k.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rrk10k.jpg" alt="https://files.catbox.moe/rrk10k.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rrk10k.jpg" alt="https://files.catbox.moe/rrk10k.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rpx1sx.jpg" onclick="copyToClipboard('https://files.catbox.moe/rpx1sx.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rpx1sx.jpg" alt="https://files.catbox.moe/rpx1sx.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rpx1sx.jpg" alt="https://files.catbox.moe/rpx1sx.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rpuzjg.jpg" onclick="copyToClipboard('https://files.catbox.moe/rpuzjg.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rpuzjg.jpg" alt="https://files.catbox.moe/rpuzjg.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rpuzjg.jpg" alt="https://files.catbox.moe/rpuzjg.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/ro9n61.jpg" onclick="copyToClipboard('https://files.catbox.moe/ro9n61.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/ro9n61.jpg" alt="https://files.catbox.moe/ro9n61.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/ro9n61.jpg" alt="https://files.catbox.moe/ro9n61.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rnjlli.jpg" onclick="copyToClipboard('https://files.catbox.moe/rnjlli.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rnjlli.jpg" alt="https://files.catbox.moe/rnjlli.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rnjlli.jpg" alt="https://files.catbox.moe/rnjlli.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rkhztj.jpg" onclick="copyToClipboard('https://files.catbox.moe/rkhztj.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rkhztj.jpg" alt="https://files.catbox.moe/rkhztj.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rkhztj.jpg" alt="https://files.catbox.moe/rkhztj.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rjc2l5.jpg" onclick="copyToClipboard('https://files.catbox.moe/rjc2l5.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rjc2l5.jpg" alt="https://files.catbox.moe/rjc2l5.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rjc2l5.jpg" alt="https://files.catbox.moe/rjc2l5.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rj02nk.jpg" onclick="copyToClipboard('https://files.catbox.moe/rj02nk.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rj02nk.jpg" alt="https://files.catbox.moe/rj02nk.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rj02nk.jpg" alt="https://files.catbox.moe/rj02nk.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rff5fl.jpg" onclick="copyToClipboard('https://files.catbox.moe/rff5fl.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rff5fl.jpg" alt="https://files.catbox.moe/rff5fl.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rff5fl.jpg" alt="https://files.catbox.moe/rff5fl.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rf02ur.jpg" onclick="copyToClipboard('https://files.catbox.moe/rf02ur.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rf02ur.jpg" alt="https://files.catbox.moe/rf02ur.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rf02ur.jpg" alt="https://files.catbox.moe/rf02ur.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rdqqej.jpg" onclick="copyToClipboard('https://files.catbox.moe/rdqqej.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rdqqej.jpg" alt="https://files.catbox.moe/rdqqej.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rdqqej.jpg" alt="https://files.catbox.moe/rdqqej.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rdih06.jpg" onclick="copyToClipboard('https://files.catbox.moe/rdih06.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rdih06.jpg" alt="https://files.catbox.moe/rdih06.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rdih06.jpg" alt="https://files.catbox.moe/rdih06.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/rd52mc.jpg" onclick="copyToClipboard('https://files.catbox.moe/rd52mc.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/rd52mc.jpg" alt="https://files.catbox.moe/rd52mc.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/rd52mc.jpg" alt="https://files.catbox.moe/rd52mc.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/raqmb0.jpg" onclick="copyToClipboard('https://files.catbox.moe/raqmb0.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/raqmb0.jpg" alt="https://files.catbox.moe/raqmb0.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/raqmb0.jpg" alt="https://files.catbox.moe/raqmb0.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/ragoz8.jpg" onclick="copyToClipboard('https://files.catbox.moe/ragoz8.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/ragoz8.jpg" alt="https://files.catbox.moe/ragoz8.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/ragoz8.jpg" alt="https://files.catbox.moe/ragoz8.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/r86v5q.jpg" onclick="copyToClipboard('https://files.catbox.moe/r86v5q.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/r86v5q.jpg" alt="https://files.catbox.moe/r86v5q.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/r86v5q.jpg" alt="https://files.catbox.moe/r86v5q.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/r1wgzc.jpg" onclick="copyToClipboard('https://files.catbox.moe/r1wgzc.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/r1wgzc.jpg" alt="https://files.catbox.moe/r1wgzc.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/r1wgzc.jpg" alt="https://files.catbox.moe/r1wgzc.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/r196iu.jpg" onclick="copyToClipboard('https://files.catbox.moe/r196iu.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/r196iu.jpg" alt="https://files.catbox.moe/r196iu.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/r196iu.jpg" alt="https://files.catbox.moe/r196iu.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/qwv1vz.jpg" onclick="copyToClipboard('https://files.catbox.moe/qwv1vz.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/qwv1vz.jpg" alt="https://files.catbox.moe/qwv1vz.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/qwv1vz.jpg" alt="https://files.catbox.moe/qwv1vz.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/qwdswy.jpg" onclick="copyToClipboard('https://files.catbox.moe/qwdswy.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/qwdswy.jpg" alt="https://files.catbox.moe/qwdswy.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/qwdswy.jpg" alt="https://files.catbox.moe/qwdswy.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/qt9vo2.jpg" onclick="copyToClipboard('https://files.catbox.moe/qt9vo2.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/qt9vo2.jpg" alt="https://files.catbox.moe/qt9vo2.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/qt9vo2.jpg" alt="https://files.catbox.moe/qt9vo2.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/qs957k.jpg" onclick="copyToClipboard('https://files.catbox.moe/qs957k.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/qs957k.jpg" alt="https://files.catbox.moe/qs957k.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/qs957k.jpg" alt="https://files.catbox.moe/qs957k.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/qrulhw.jpg" onclick="copyToClipboard('https://files.catbox.moe/qrulhw.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/qrulhw.jpg" alt="https://files.catbox.moe/qrulhw.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/qrulhw.jpg" alt="https://files.catbox.moe/qrulhw.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/qpdi0y.jpg" onclick="copyToClipboard('https://files.catbox.moe/qpdi0y.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/qpdi0y.jpg" alt="https://files.catbox.moe/qpdi0y.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/qpdi0y.jpg" alt="https://files.catbox.moe/qpdi0y.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/qnihoc.jpg" onclick="copyToClipboard('https://files.catbox.moe/qnihoc.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/qnihoc.jpg" alt="https://files.catbox.moe/qnihoc.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/qnihoc.jpg" alt="https://files.catbox.moe/qnihoc.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/qliu25.jpg" onclick="copyToClipboard('https://files.catbox.moe/qliu25.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/qliu25.jpg" alt="https://files.catbox.moe/qliu25.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/qliu25.jpg" alt="https://files.catbox.moe/qliu25.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/qhyi8n.jpg" onclick="copyToClipboard('https://files.catbox.moe/qhyi8n.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/qhyi8n.jpg" alt="https://files.catbox.moe/qhyi8n.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/qhyi8n.jpg" alt="https://files.catbox.moe/qhyi8n.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/qfe10x.jpg" onclick="copyToClipboard('https://files.catbox.moe/qfe10x.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/qfe10x.jpg" alt="https://files.catbox.moe/qfe10x.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/qfe10x.jpg" alt="https://files.catbox.moe/qfe10x.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/q7gndi.jpg" onclick="copyToClipboard('https://files.catbox.moe/q7gndi.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/q7gndi.jpg" alt="https://files.catbox.moe/q7gndi.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/q7gndi.jpg" alt="https://files.catbox.moe/q7gndi.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/q737th.jpg" onclick="copyToClipboard('https://files.catbox.moe/q737th.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/q737th.jpg" alt="https://files.catbox.moe/q737th.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/q737th.jpg" alt="https://files.catbox.moe/q737th.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/q6i7w3.jpg" onclick="copyToClipboard('https://files.catbox.moe/q6i7w3.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/q6i7w3.jpg" alt="https://files.catbox.moe/q6i7w3.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/q6i7w3.jpg" alt="https://files.catbox.moe/q6i7w3.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/q5h3ku.jpg" onclick="copyToClipboard('https://files.catbox.moe/q5h3ku.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/q5h3ku.jpg" alt="https://files.catbox.moe/q5h3ku.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/q5h3ku.jpg" alt="https://files.catbox.moe/q5h3ku.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/q5go77.jpg" onclick="copyToClipboard('https://files.catbox.moe/q5go77.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/q5go77.jpg" alt="https://files.catbox.moe/q5go77.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/q5go77.jpg" alt="https://files.catbox.moe/q5go77.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/q53rto.jpg" onclick="copyToClipboard('https://files.catbox.moe/q53rto.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/q53rto.jpg" alt="https://files.catbox.moe/q53rto.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/q53rto.jpg" alt="https://files.catbox.moe/q53rto.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/q3o3g2.jpg" onclick="copyToClipboard('https://files.catbox.moe/q3o3g2.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/q3o3g2.jpg" alt="https://files.catbox.moe/q3o3g2.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/q3o3g2.jpg" alt="https://files.catbox.moe/q3o3g2.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/pzmhh3.jpg" onclick="copyToClipboard('https://files.catbox.moe/pzmhh3.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/pzmhh3.jpg" alt="https://files.catbox.moe/pzmhh3.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/pzmhh3.jpg" alt="https://files.catbox.moe/pzmhh3.jpg" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/pyirjy.jpg" onclick="copyToClipboard('https://files.catbox.moe/pyirjy.jpg'); event.preventDefault();">
-  <img src="https://files.catbox.moe/pyirjy.jpg" alt="https://files.catbox.moe/pyirjy.jpg" loading="lazy">
+  <img src="https://files.catbox.moe/pyirjy.jpg" alt="https://files.catbox.moe/pyirjy.jpg" 
+  >
  </a>
 </div>
     </div>
@@ -367,7 +419,7 @@
 <body style="margin:0;">
   <div style="
     position:fixed; inset:0;
-    background:url('https://files.catbox.moe/siyn14.jpg') center/cover no-repeat;
+    background:url('https://files.catbox.moe/qrulhw.jpg') center/cover no-repeat;
     filter:grayscale(50%) opacity(0.3);
     z-index:-1;
   "></div>

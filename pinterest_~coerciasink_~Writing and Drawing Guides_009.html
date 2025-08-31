@@ -14,9 +14,11 @@
 <body>
   <div style="
     position:fixed; inset:0;
-    background:url('https://i.pinimg.com/originals/0e/b1/7c/0eb17cb522a882d6594d712822180810.jpg') center top repeat-y;
+    background:
+        linear-gradient(#171717e2, #171717e2),  /* dark overlay */
+        url('https://i.pinimg.com/originals/0e/b1/7c/0eb17cb522a882d6594d712822180810.jpg') center top repeat-y;
     background-size: 100% auto;
-    filter:grayscale(50%) opacity(0.5);
+    filter:grayscale(50%) opacity(1);
     z-index:-1;
   "></div>
 </body>
@@ -28,19 +30,20 @@
         <input type="number" id="columnCountInput" min="1" max="10" value="5">
     </div>
     <div style="text-align:center; margin-bottom: 1em;">
-        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Justified</button>
+        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Masonry</button>
     </div>
     <p align="center"> Images on this page - 1, on this board - 401</p>
-    <p align="right"> Created on - 2025-09-01 01:23:23</p>
-    <p align="right"> Created with pixBoards version: 0.2.25</p>
+    <p align="right"> Created on - 2025-09-01 03:06:11</p>
+    <p align="right"> Created with pixBoards version: 0.2.26</p>
 
     <hr>
 
-    <div class="masonry-container">
+    <div id="gallery" class="justified-container">
         
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://i.pinimg.com/originals/0e/b1/7c/0eb17cb522a882d6594d712822180810.jpg" onclick="copyToClipboard('https://i.pinimg.com/originals/0e/b1/7c/0eb17cb522a882d6594d712822180810.jpg'); event.preventDefault();">
-  <img src="https://i.pinimg.com/originals/0e/b1/7c/0eb17cb522a882d6594d712822180810.jpg" alt="https://i.pinimg.com/originals/0e/b1/7c/0eb17cb522a882d6594d712822180810.jpg" loading="lazy">
+  <img src="https://i.pinimg.com/originals/0e/b1/7c/0eb17cb522a882d6594d712822180810.jpg" alt="https://i.pinimg.com/originals/0e/b1/7c/0eb17cb522a882d6594d712822180810.jpg" 
+  >
  </a>
 </div>
     </div>

@@ -14,9 +14,11 @@
 <body>
   <div style="
     position:fixed; inset:0;
-    background:url('https://files.catbox.moe/14vjxw.JPG') center top repeat-y;
+    background:
+        linear-gradient(#171717e2, #171717e2),  /* dark overlay */
+        url('https://files.catbox.moe/1hadpk.JPG') center top repeat-y;
     background-size: 100% auto;
-    filter:grayscale(50%) opacity(0.5);
+    filter:grayscale(50%) opacity(1);
     z-index:-1;
   "></div>
 </body>
@@ -28,55 +30,62 @@
         <input type="number" id="columnCountInput" min="1" max="10" value="5">
     </div>
     <div style="text-align:center; margin-bottom: 1em;">
-        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Justified</button>
+        <button id="toggleLayout" style="padding: 6px 12px;">Switch to Masonry</button>
     </div>
     <p align="center"> Images on this page - 7, on this board - 207</p>
-    <p align="right"> Created on - 2025-09-01 01:23:23</p>
-    <p align="right"> Created with pixBoards version: 0.2.25</p>
+    <p align="right"> Created on - 2025-09-01 03:06:11</p>
+    <p align="right"> Created with pixBoards version: 0.2.26</p>
 
     <hr>
 
-    <div class="masonry-container">
+    <div id="gallery" class="justified-container">
         
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/1hadpk.JPG" onclick="copyToClipboard('https://files.catbox.moe/1hadpk.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/1hadpk.JPG" alt="https://files.catbox.moe/1hadpk.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/1hadpk.JPG" alt="https://files.catbox.moe/1hadpk.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/1cb80x.JPG" onclick="copyToClipboard('https://files.catbox.moe/1cb80x.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/1cb80x.JPG" alt="https://files.catbox.moe/1cb80x.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/1cb80x.JPG" alt="https://files.catbox.moe/1cb80x.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/1btjou.JPG" onclick="copyToClipboard('https://files.catbox.moe/1btjou.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/1btjou.JPG" alt="https://files.catbox.moe/1btjou.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/1btjou.JPG" alt="https://files.catbox.moe/1btjou.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/14vjxw.JPG" onclick="copyToClipboard('https://files.catbox.moe/14vjxw.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/14vjxw.JPG" alt="https://files.catbox.moe/14vjxw.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/14vjxw.JPG" alt="https://files.catbox.moe/14vjxw.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/0rkrjf.JPG" onclick="copyToClipboard('https://files.catbox.moe/0rkrjf.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/0rkrjf.JPG" alt="https://files.catbox.moe/0rkrjf.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/0rkrjf.JPG" alt="https://files.catbox.moe/0rkrjf.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/05vhuy.JPG" onclick="copyToClipboard('https://files.catbox.moe/05vhuy.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/05vhuy.JPG" alt="https://files.catbox.moe/05vhuy.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/05vhuy.JPG" alt="https://files.catbox.moe/05vhuy.JPG" 
+  >
  </a>
 </div>
 
-<div class="masonry-item">
+<div class="justified-item">
  <a href="https://files.catbox.moe/01933f.JPG" onclick="copyToClipboard('https://files.catbox.moe/01933f.JPG'); event.preventDefault();">
-  <img src="https://files.catbox.moe/01933f.JPG" alt="https://files.catbox.moe/01933f.JPG" loading="lazy">
+  <img src="https://files.catbox.moe/01933f.JPG" alt="https://files.catbox.moe/01933f.JPG" 
+  >
  </a>
 </div>
     </div>
@@ -109,7 +118,7 @@
 <body style="margin:0;">
   <div style="
     position:fixed; inset:0;
-    background:url('https://files.catbox.moe/14vjxw.JPG') center/cover no-repeat;
+    background:url('https://files.catbox.moe/1hadpk.JPG') center/cover no-repeat;
     filter:grayscale(50%) opacity(0.3);
     z-index:-1;
   "></div>
